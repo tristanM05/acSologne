@@ -5,27 +5,35 @@
         <div class="col-lg-9">
             <h1 class="text-center py-5">Modifier votre annonce</h1>
             <hr id="hrContact">
-            <div class="adsForm">
-            <h2 class="mb-4">{{annonce.title}}</h2>
-                <form action="{{ path('editAnnonce',{'slug': annonce.slug}) }}" name="annonce" method="post" enctype="multipart/form-data">
-                    <div>
-                        {{ form_row(form.title) }}
-                        {{ form_row(form.annonceCat) }}
-                        <div class="mb-3">
-                            <label for="images">Sélectionner une ou plusieurs images:</label>
-                            <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
-                        </div>
-                        {{ form_row(form.content) }}
-                        <input type="submit" class="btn btn-primary mb-4" value="Valider">
+            <div class="adsForm card">
+            <h2 class="mb-4 card-header">{{annonce.title}}</h2>
+            <form action="{{ path('editAnnonce',{'slug': annonce.slug}) }}" name="annonce" method="post"
+                enctype="multipart/form-data">
+                <div class="card-body">
+                    {{ form_row(form.title) }}
+                    {{ form_row(form.annonceCat) }}
+                    <div class="mb-3">
+                        <label for="images">Sélectionner une ou plusieurs images:</label>
+                        <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
                     </div>
-                {{ form_end(form) }}
-                <div class="row">
-                    {% for a in annonce.images %}
-                        <div class="col-lg-4">
-                            <img src="{{asset('images/annonce/' ~ a.src)}}" alt="" class="adsImg">
-                        </div>
-                    {% endfor %}
+                    {{ form_row(form.content) }}
                 </div>
+                <div class="card-footer">
+                    <input type="submit" class="btn btn-primary btn-block" value="Valider">
+                </div>
+                    {{ form_end(form) }}
+            </div>
+            <div class="row pl-3 mt-5">
+                {% for a in annonce.images %}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="supImg">
+                        <img src="{{asset('images/annonce/' ~ a.src)}}" alt="" class="adsImg">
+                        <a href="#" class="deleteImgUser" data-annonce="{{ annonce.id }}" data-photo="{{ a.id }}">
+                            <i class="fas fa-times fa-2x p-1 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
         <div class="col-lg-3">

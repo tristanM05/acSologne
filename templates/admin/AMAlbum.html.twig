@@ -19,17 +19,19 @@
         <input type="file" multiple class="form-controle" name="photos[]" id="photos">
     </div>
     {{form_widget(form)}}
-    <input type="submit" class="btn btn-primary" value="Valider">
+    <input type="submit" class="btn btn-primary mb-5" value="Valider">
 {{form_end(form)}}
     <div class="row">
-            {% for a in album.images %}
-                <div class="col-lg-4">
-                    <img src="{{asset('images/album/' ~ a.src)}}" alt="" class="adminImg">
-                    <div class="supImg">
-                        <i class="fas fa-times fa-2x p-1 ml-2"></i>
-                    </div>
+        {% for a in album.images %}
+            <div class="col-lg-4">
+                <div class="supImg">
+                <img src="{{asset('images/album/' ~ a.src)}}" alt="" class="adminImg">
+                    <a href="#" class="deleteImg" data-album ="{{ album.id }}" data-photo="{{ a.id }}">
+                    <i class="fas fa-times fa-2x p-1 ml-2"></i>
+                    </a>
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

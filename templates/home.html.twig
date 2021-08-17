@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-	<section class="wrapper container">
+	<section class="wrapper container" id="home">
 		<header>
 			<div id="banner">
 				
@@ -21,13 +21,13 @@
 								<img src="/images/avion1.jpg" alt="" class="imgHome1">
 								<h3 class="mt-3">Un Parc machine moderne</h3>
 								<p>{{"L'Aéroclub de Sologne renouvelle constamment son parc machine afin d'apporter toujours plus de modernité. Coté avion, l'Aéroclub de Sologne a acquis dernièrement un Robin DR400 Ecoflyer 155/CDI pour l'école et le voyage. Côté planeur, le club est fier de ses planeurs de performance : Ventus 2 CxT, Discus 2b et et Nimbus 4DT."|slice(0,120)}}...</p>
-								<a href="#" class="btn btn-primary p-2 mb-4">Lire plus</a>
+								<p class="btn btn-primary p-2 mb-4" data-toggle="modal" data-target="M1">Lire plus</p>
 							</div>
 							<div>
 								<img src="/images/terrain.jpg" alt="" class="imgHome1">
 								<h3 class="mt-3">Une plateforme exeptionelle</h3>
 								<p>{{"A seulement 2h de Paris, l'Aéroclub de Sologne est idéalement placé au coeur de la Sologne, au milieu d'un espace aérien non contrôlé. En plus d'une aérologie remarquable, vous trouverez sur le terrain deux pistes (950m et 1100m de long), une station essence automatique Total... Vous ne manquerez de rien ! Et en cas de mauvais temps, vous pouvez profiter des attractions touristiques de la région : zoo de Beauval, châteaux de la Loire, Center Parcs."|slice(0,120)}}...</p>
-								<a href="#" class="btn btn-primary p-2">Lire plus</a>
+								<p class="btn btn-primary p-2 mb-4" data-toggle="modal" data-target="M2">Lire plus</p>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -35,16 +35,94 @@
 								<img src="/images/ecole.jpg" alt="" class="imgHome1">
 								<h3 class="mt-3">Une école reconnue</h3>
 								<p>{{"Notre école de pilotage vous accueille 7j/7. Les instructeurs chevronnés de l'Aéroclub de Sologne, toujours disponibles, vous permettront d'apprendre à piloter et de vous perfectionner, que ce soit en avion, en planeur ou en ULM."|slice(0,120)}}...</p>
-								<a href="#" class="btn btn-primary p-2 mb-4">Lire plus</a>
+								<p class="btn btn-primary p-2 mb-4" data-toggle="modal" data-target="M3">Lire plus</p>
 							</div>
 							<div>
-								<img src="/images/img11.jpg" alt="" class="imgHome1">
+								<img src="/images/img11.jpg" alt="" class="imgHome1 mt-4">
 								<h3 class="mt-3">Un Parc machine moderne</h3>
 								<p>{{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia molestiae quo fugit, excepturi earum illum doloremque maxime consectetur repellendus?"|slice(0,120)}}...</p>
-								<a href="#" class="btn btn-primary p-2">Lire plus</a>
+								<p class="btn btn-primary p-2 mb-4" data-toggle="modal" data-target="M4">Lire plus</p>
 							</div>
 						</div>
 					</div>
+					{# /************************** MODAL **********************************/ #}
+					<div class="modal container" id="M1">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <img src="/images/terrain.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <ul id="ulmodal">
+                                            <li><h5 class="modal-title">Un Parc machine moderne</h5></li>
+                                            <li><button type="button" class="btn mr-3" data-dismiss="modal">X</button></li>
+                                        </ul>
+                                        <p>L'Aéroclub de Sologne renouvelle constamment son parc machine afin d'apporter toujours plus de modernité. Coté avion, l'Aéroclub de Sologne a acquis dernièrement un Robin DR400 Ecoflyer 155/CDI pour l'école et le voyage. Côté planeur, le club est fier de ses planeurs de performance : Ventus 2 CxT, Discus 2b et et Nimbus 4DT.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="modal container" id="M2">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <img src="/images/terrain.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <ul id="ulmodal">
+                                            <li><h5 class="modal-title">Une plateforme exeptionelle</h5></li>
+                                            <li><button type="button" class="btn mr-3" data-dismiss="modal">X</button></li>
+                                        </ul>
+                                        <p>A seulement 2h de Paris, l'Aéroclub de Sologne est idéalement placé au coeur de la Sologne, au milieu d'un espace aérien non contrôlé. En plus d'une aérologie remarquable, vous trouverez sur le terrain deux pistes (950m et 1100m de long), une station essence automatique Total... Vous ne manquerez de rien ! Et en cas de mauvais temps, vous pouvez profiter des attractions touristiques de la région : zoo de Beauval, châteaux de la Loire, Center Parcs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="modal container" id="M3">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <img src="/images/ecole.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <ul id="ulmodal">
+                                            <li><h5 class="modal-title">Une école reconnue</h5></li>
+                                            <li><button type="button" class="btn mr-3" data-dismiss="modal">X</button></li>
+                                        </ul>
+                                        <p>Notre école de pilotage vous accueille 7j/7. Les instructeurs chevronnés de l'Aéroclub de Sologne, toujours disponibles, vous permettront d'apprendre à piloter et de vous perfectionner, que ce soit en avion, en planeur ou en ULM.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="modal container" id="M4">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <img src="/images/img11.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <ul id="ulmodal">
+                                            <li><h5 class="modal-title">Un Parc machine moderne</h5></li>
+                                            <li><button type="button" class="btn mr-3" data-dismiss="modal">X</button></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia molestiae quo fugit, excepturi earum illum doloremque maxime consectetur repellendus?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					{# /************************** MODAL **********************************/ #}
+
 					<hr class="my-5">
 					<h2 class="mb-5">Le Club</h2>
 					<div class="row">
@@ -68,9 +146,9 @@
 							<img src="/images/bia.jpg" alt="" class="imgHome2">
 						</div>
 						<div class="col-lg-8 mb-4">
-							<h3>Le BIA</h3>
+							<h3>Les formations</h3>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque a obcaecati similique pariatur magni quasi libero atque odio, doloribus nobis.</p>
-							<a href="{{path('bia')}}" class="btn btn-primary mb-4">plus</a>
+							<a href="{{path('allFormation')}}" class="btn btn-primary mb-4">plus</a>
 						</div>
 					</div>
 				</div>
@@ -84,7 +162,7 @@
                                         De la formation initiale au perfectionnement du pilotage, notre école de pilotage est ouverte toute l'année.
                                     </p>
                                 </div>
-                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'section_moteur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'moteur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
                             </div>
 						</div>
 					</div>
@@ -97,7 +175,7 @@
                                         Notre gamme s'étend de la formation initiale à la haute compétition. La saison de planeur couvre une période de mars à octobre en fonction des conditions météorologiques.
                                     </p>
                                 </div>
-                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'section_planneur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'planeur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
                             </div>
 						</div>
 					</div>
@@ -110,7 +188,7 @@
                                         Multiaxes, équipé pour la formation et la navigation, il est également muni d'un parachute balistique pour plus de sécurité.
                                     </p>
                                 </div>
-                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'section_moteur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'moteur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
                             </div>
 						</div>
 					</div>

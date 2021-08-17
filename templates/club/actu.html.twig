@@ -3,10 +3,11 @@
     Les actualités
 {% endblock %}
 {% block body %}
-<div class="wrapper container">
+<div class="wrapper container" id="actu">
     <div class="row">
         <div class="col-lg-9">
-            <h1 class="py-5 pl-3">Toute nos actualités</h1>
+            <h1 class="py-5 pl-3 text-center">Toute nos actualités</h1>
+            <hr id="hrContact">
             {% for a in actus %}
             <div class="row p-3 mt-2">
                 <div class="col-lg-4">

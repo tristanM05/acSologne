@@ -7,7 +7,7 @@
 {% block body %}
     <a href="{{ path('createFormation') }}" class="btn btn-success m-4">Ajoutez</a>
 {% for message in app.flashes('success') %}
-    <div class="container alert alert-success">
+    <div class="container alert alert-success text-center">
         {{message}}
     </div>
 {% endfor %}

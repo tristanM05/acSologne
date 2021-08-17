@@ -1,10 +1,10 @@
 {% extends "base.html.twig" %}
 {% block body %}
 <div class="wrapper container">
-    <div class="row pl-4">
+    <div class="row pl-4 machineShow">
         <div class="col-lg-9 pr-3">
             <h1 class="text-center py-5">{{machine.nom}}</h1>
-            <hr class="hrVol pb-5">
+            <hr id="hrContact">
             <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
                 <ol class="carousel-indicators">
                 {% for image in machine.images %}
@@ -14,7 +14,7 @@
                 <div class="carousel-inner">
                     {% for image in machine.images %}
                         <div class="carousel-item {% if loop.first %}active {% endif %}">
-                            <img src="{{asset('images/machines/' ~ image.src)}}" class="d-block w-100" alt="...">
+                            <img src="{{asset('images/machines/' ~ image.src)}}" class="d-block w-100" alt="img-machines">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{{ machine.nom }}</h5>
                             </div>

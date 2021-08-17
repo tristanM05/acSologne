@@ -7,7 +7,7 @@
             <hr id="hrContact">
             <a href="{{path('createAnnonce')}}" class="btn btn-success ml-3 mt-4">Ajouter une annonce</a>
             {% for message in app.flashes('success') %}
-                <div class="container alert alert-success mt-3" id="alertAds">
+                <div class="container alert alert-success mt-3 text-center" id="alertAds">
                     {{message}}
                 </div>
             {% endfor %}
@@ -34,7 +34,7 @@
                 {% if a.status != 1 %}
                     <small class="pl-3">en attente de confirmation...</small>
                 {% else %}
-                    <small class="pl-3 pr-5">Annonce publié</small>
+                    <small class="pl-3 pr-5">Annonce publiée</small>
                     <a href="{{path('editAnnonce',{'slug': a.slug})}}" class="btn btn-success">Modifier</a>
                     <form method="POST" style="display:inline-block" action="{{path('supAnnonceUser',{'id':a.id})}}" onsubmit="return confirm ('Confirmer la suppression')">
                         <input type="hidden" name="_method" value="delete">

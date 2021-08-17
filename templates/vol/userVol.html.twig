@@ -1,0 +1,52 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row" id="userVol">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Mes propositions de vols</h1>
+            <hr id="hrContact">
+            <div class="d-flex ml-5 mb-5">
+                <a href="{{path('volCreate')}}" class="btn btn-success mt-4">Ajouter un vol</a>
+                <a href="{{path('user_booking')}}" class="btn btn-primary ml-3 mt-4">Mes réservations</a>
+            </div>
+            {% for message in app.flashes('success') %}
+            <div class="container alert alert-success mt-3 text-center" id="alertAds">
+                {{message}}
+            </div>
+            {% endfor %}
+            {% for a in app.user.vols  %}
+                <div class="card adsVol m-auto">
+                    <h2 class="card-header">{{a.title}}</h2>
+                    <div class="card-body">
+                        <p>
+                            {% if a.content | length >=   200 %}
+                            <td>{{a.content | slice(0, 200)}}... <a href="{{path('vol_showUser',{'slug': a.slug})}}">Voir plus</a> </td>
+                            {% else %}
+                            <td>{{a.content}}</td>
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        {% if a.status != 1 %}
+                        <small class="pl-3">en attente de confirmation...</small>
+                        {% else %}
+                        <small class="pl-3 pr-5">Annonce publié</small>
+                        <a href="{{path('vol_showUser',{'slug': a.slug})}}" class="btn btn-secondary mr-2">Voir les réservations</a>
+                        <a href="{{path('volEdit', {'slug': a.slug})}}" class="btn btn-success">Modifier</a>
+                        <form method="POST" style="display:inline-block" action="{{path('supVolUser',{'id':a.id})}}" onsubmit="return confirm       ('Confirmer la suppression')">
+                            <input type="hidden" name="_method" value="delete">
+                            <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ a.id)}}">
+                            <input type="submit" class="btn btn-danger supvol" value="supprimer">
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+                <hr class="hrVol my-5">
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Annonces{% endblock %}
+
+{% block monTitre %}Gestion des Vols{% endblock %}
+
+{% block body %}
+{% for message in app.flashes('success') %}
+    <div class="container alert alert-success text-center">
+        {{message}}
+    </div>
+{% endfor %}
+<table class="table table-hover text-center">
+    <tr class="table-primary">
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>Email</td>
+        <td>Date de création</td>
+        <td>Titre</td>
+        <td>Contenu</td>
+        <td>Actions</td>
+    </tr>
+    {% for v in vol%}
+        <tr>
+            <td><strong>{{v.user.lastname}}</strong></td>
+            <td><strong>{{v.user.firstname}}</strong></td>
+            <td>{{v.user.email}}</td>
+            <td>{{v.createdAt|date("d/m/Y")}}</td>
+            <td>{{v.title}}</td>
+            {% if v.content | length >=   100 %}
+                    <td>{{v.content | slice(0, 100)}}... <a href="{{path('show_vol', {'id': v.id})}}">Voir plus</a> </td>
+                {% else %}
+                    <td>{{v.content}}</td>
+                {% endif %}
+            <td>
+                {% if v.status != 1 %}
+                    <form method="POST" style="display:inline-block" action="{{path('validVol',{'id':v.id})}}" onsubmit="return confirm ('Confirmer la validation du commentaire')">
+                        <input type="hidden" name="_method" value="valid">
+                        <input type="hidden" name="_token" value="{{csrf_token('VAL' ~ v.id)}}">
+                        <input type="submit" class="btn btn-secondary" value="valider">
+                    </form>
+                {% else %}
+                    <a href="{{path('show_vol', {'id': v.id})}}" class="btn btn-success">afficher</a>
+                {% endif %}
+                <form method="POST" style="display:inline-block" action="{{path('supVol',{'id':v.id})}}" onsubmit="return confirm('Confirmer la suppression')">
+                <input type="hidden" name="_method" value="delete">
+                <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ v.id)}}">
+                <input type="submit" class="btn btn-danger" value="supprimer">
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

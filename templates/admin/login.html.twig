@@ -4,27 +4,47 @@
 
 
 {% block body %}
-<div class="wrapper container text-center">
-<h1 class="text-uppercase py-5">Connexion a l'espace d'administration</h1>
+<div class="wrapper container text-center" id="log">
     {% if erreur %}
-        <div class="alert alert-danger">
-            <p>Une erreur est survenue, le nom d'utilisateur ou le mot de passe est incorrect</p>
-        </div>
+    <div class="alert alert-danger">
+        <p>Une erreur est survenue, le nom d'utilisateur ou le mot de passe est incorrect</p>
+    </div>
     {% endif %}
-    <div class="row col justify-content-center py-5">
-        <form method="post">
-            <div class="form-group">
-                <label for="email">Identifiant</label>
-                <input type="text" class="form-control" name="_username" id="email" required value="{{identifiant}}">
+    {% for message in app.flashes('success') %}
+        <div class="container alert alert-success text-center">
+            {{message}}
+        </div>
+    {% endfor %}
+    <div class="container">
+        <div class="row">
+            <div class="card cardLog">
+                <div class="card-header">
+                    <h1 class="text-uppercase p-2">Connexion a votre espace administrateur</h1>
+                </div>
+                    <div class="card-body d-flex">
+                        <div class="col-lg-6 col-sm-12">
+                            <form method="post" class="m-auto pt-5" id="log2">
+                                <div class="form-group">
+                                    <label for="email">Identifiant:</label>
+                                    <input type="text" class="form-control" name="_username" id="email" required
+                                        value="{{identifiant}}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Mot de passe:</label>
+                                    <input type="password" class="form-control" name="_password" id="password" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success form-control">Connexion</button>
+                                    <a href="{{path('app_forgotten_password')}}">Mot de passe oublié ?</a>
+                                </div>
+                            </form>
+                        </div>
+                    <div class="col-lg-6" id="imgLog">
+                        <img src="/images/undraw2.png" alt="" class="img-fluid">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">Mot de passe</label>
-                <input type="password" class="form-control" name="_password" id="password" required>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-success form-control">Connexion</button>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -1,11 +1,11 @@
 {% extends 'baseAdmin.html.twig' %}
 {% block title %}Formation{% endblock %}
 {% block monTitre %}
-    {% if edit %}
-        Modifier la formation {{formation.title}}
-    {% else %}
-        Ajouter une formation
-    {% endif %}
+{% if edit %}
+Modifier la formation {{formation.title}}
+{% else %}
+Ajouter une formation
+{% endif %}
 {% endblock %}
 {% block body %}
 {% if edit %}
@@ -13,31 +13,43 @@
 {% else %}
 {% set pathx = 'createFormation' %}
 {% endif %}
-<form action="{{ path(pathx,{'id':formation.id}) }}" name="formation" method="post" enctype="multipart/form-data">
 
-    <div class="container">
+<div class="container">
+    <form action="{{ path(pathx,{'id':formation.id}) }}" name="formation" method="post" enctype="multipart/form-data">
         {{form_row(form.title)}}
         {{form_row(form.content)}}
-            <div class="form-group">
-                <label for="file">Ajouter une ou plusieurs images:</label>
-                <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
-            </div>
+        <div class="form-group">
+            <label for="file">Ajouter une ou plusieurs images:</label>
+            <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
+        </div>
         {{form_row(form.categories)}}
         <input type="submit" class="btn btn-primary mb-4" value="Valider">
+        {{form_end(form)}}
         <p>Les images:</p>
         <div class="row">
             {% for f in formation.images %}
-                <div class="col-lg-4">
+            <div class="col-lg-4">
+                <div class="supImg">
                     <img src="{{asset('images/formation/' ~ f.src)}}" alt="" class="adminImg">
-                    <div class="supImg">
+                    <a href="#" class="deleteImgForm" data-formation="{{ formation.id }}" data-photo="{{ f.id }}">
                         <i class="fas fa-times fa-2x p-1 ml-2"></i>
-                    </div>
+                    </a>
                 </div>
+            </div>
             {% endfor %}
         </div>
-    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    <script>
+    
+tinymce.init({
+    selector: '#formation_content',
+    height: 400,
+    toolbar_mode: 'floating',
+    language: 'fr_FR',
+    toolbar: 'forecolor backcolor undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent'
 
-    {{form_end(form)}}
+})
     </script>
-    {% endblock %}
-
+{% endblock %}

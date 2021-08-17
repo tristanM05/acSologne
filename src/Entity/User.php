@@ -38,6 +38,8 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=6,minMessage="Le mot de passe doit contenir au moins 6 charactères")
      */
     private $hash;
 
@@ -68,10 +70,27 @@ class User implements UserInterface
      */
     private $annonces;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Vol", mappedBy="user",fetch="EAGER")
+     */
+    private $vols;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Booking", mappedBy="booker",fetch="EAGER")
+     */
+    private $bookings;
+
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $reset_token;
+
     public function __construct()
     {
         $this->roles = new ArrayCollection();
         $this->annonces = new ArrayCollection();
+        $this->vols = new ArrayCollection();
+        $this->bookings = new ArrayCollection();
     }
 
     public function getFullName(){
@@ -253,4 +272,79 @@ class User implements UserInterface
 
         return $this;
     }
+
+    /**
+     * @return Collection|Vol[]
+     */
+    public function getVols(): Collection
+    {
+        return $this->vols;
+    }
+
+    public function addVol(Vol $vol): self
+    {
+        if (!$this->vols->contains($vol)) {
+            $this->vols[] = $vol;
+            $vol->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeVol(Vol $vol): self
+    {
+        if ($this->vols->contains($vol)) {
+            $this->vols->removeElement($vol);
+            // set the owning side to null (unless already changed)
+            if ($vol->getUser() === $this) {
+                $vol->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Booking[]
+     */
+    public function getBookings(): Collection
+    {
+        return $this->bookings;
+    }
+
+    public function addBooking(Booking $booking): self
+    {
+        if (!$this->bookings->contains($booking)) {
+            $this->bookings[] = $booking;
+            $booking->setBooker($this);
+        }
+
+        return $this;
+    }
+
+    public function removeBooking(Booking $booking): self
+    {
+        if ($this->bookings->contains($booking)) {
+            $this->bookings->removeElement($booking);
+            // set the owning side to null (unless already changed)
+            if ($booking->getBooker() === $this) {
+                $booking->setBooker(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getResetToken(): ?string
+    {
+        return $this->reset_token;
+    }
+
+    public function setResetToken(?string $reset_token): self
+    {
+        $this->reset_token = $reset_token;
+
+        return $this;
+    }
+
 }

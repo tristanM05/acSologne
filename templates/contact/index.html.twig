@@ -6,25 +6,34 @@
             <h1 class="text-center py-5 text-center">Nous contacter</h1>
             <hr id="hrContact">
             {% for message in app.flashes('success') %}
-                <div class="container alert alert-success">
+                <div class="container alert alert-success text-center" style="width:90%">
                     {{message}}
                 </div>
             {% endfor %}
-            <div id="contactForm" class="container pl-5">
-                {{form_start(form)}}
-                    <div class="row">
-                        <div class="col">{{form_row(form.firstname)}}</div>
-                        <div class="col">{{form_row(form.lastname)}}</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">{{form_row(form.phone)}}</div>
-                        <div class="col">{{form_row(form.email)}}</div>
-                    </div>
-                    {{form_widget(form)}}
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block mt-4" id="btnContact">Envoyer</button>
-                    </div>
-                {{form_end(form)}}
+            <div id="contactForm" class="card ml-3">
+                <div class="card-header p-3">
+                    <h2>Besoin d'une information ?</h2>
+                </div>
+                <div class="card-body">
+                    {{form_start(form)}}
+                        <div class="row">
+                            <div class="col">{{form_row(form.firstname)}}</div>
+                            <div class="col">{{form_row(form.lastname)}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">{{form_row(form.phone)}}</div>
+                            <div class="col">{{form_row(form.email)}}</div>
+                        </div>
+                        {{form_row(form.message)}}
+                        <div class="d-flex">
+                            {{form_row(form.check)}}
+                            <label for="check">Veuillez accepter nos <a href="{{path('consent')}}" target="blank">conditions d'utilisation</a> avant l'envoie  de votre message.</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block mt-4" id="btnContact">Envoyer</button>
+                        </div>
+                    {{form_end(form)}}
+                </div>
             </div>
         </div>
         <div class="col-lg-3">

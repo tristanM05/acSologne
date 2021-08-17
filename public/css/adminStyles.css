@@ -1,18 +1,18 @@
-.adminImg{
+.adminImg {
     width: 360px;
     height: 250px;
 }
-.supImg{
+
+.supImg {
     background-color: rgba(161, 160, 160, 0.418);
     width: 360px;
-    border: rgba(36, 36, 36, 0.664) 1px solid;
     margin-bottom: 20px;
 }
 
-i{
+i {
     color: rgb(211, 8, 8);
 }
 
-i:hover{
+i:hover {
     cursor: pointer;
 }

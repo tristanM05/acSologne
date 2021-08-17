@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Vols{% endblock %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">{{vol.title}}</h1>
+            <hr id="hrContact">
+            <div class="ml-3">
+                <p class="text-center mt-5">Annonce publiée le {{vol.createdAt|date("d/m/Y")}}</p>
+                <p class="mt-5 txtVol">{{vol.content}}</p>
+                <div class="card mt-5 cardVol">
+                    <div class="card-header text-center">
+                        <strong id="titleCard">Dates disponible</strong>
+                    </div>
+                    <div class="card-body">
+                        {% for d in vol.dates %}
+                            <ul class="ulVol">
+                                <li>
+                                    {% if d.nbPlace > 0 %}
+                                        {{d.date|date("d/m/Y")}} <br>
+                                        Nombre de places diponible:  {{d.nbPlace}} 
+                                    {% else %}
+                                        {{d.date|date("d/m/Y")}} <br>
+                                        Nombre de places disponible:  <a href="#" class="btn btn-danger ml-2" disbled>Complet</a> 
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h2 class="mb-3 h2Vol">Les réservations:</h2>
+                    <table class="table table-hover text-center tableVol">
+                        <tr class="table-primary">
+                            <td>Date reservé</td>
+                            <td>Nom</td>
+                            <td>Prenom</td>
+                            <td>E-mail</td>
+                            <td>Telephone</td>
+                            <td>Action</td>
+                        </tr>
+                        {% for v in vol.dates %}
+                            {% for b in v.bookings %}
+                                <tr>
+                                <td>{{ b.date.date|date("d/m/Y") }}</td>
+                                <td>{{ b.booker.lastName }}</td>
+                                <td>{{ b.booker.firstName }}</td>
+                                <td>{{ b.booker.email }}</td>
+                                <td>{{ b.booker.phone }}</td>
+                                <td>
+                                {% if b.status != 1 %}
+                                    <form method="POST" style="display:inline-block" action="{{path('validBookUser', {'id': b.id})}}" onsubmit="return confirm ('Confirmer la réservation ?')">
+                                        <input type="hidden" name="_method" value="valid">
+                                        <input type="hidden" name="_token" value="{{csrf_token('VAL' ~ b.id)}}">
+                                        <input type="submit" class="btn btn-secondary" value="valider">
+                                    </form>
+                                    <form method="POST" style="display:inline-block" action="{{path('supBookUser2', {'id': b.id})}}" onsubmit="return confirm('Confirmer la suppression')">
+                                        <input type="hidden" name="_method" value="delete">
+                                        <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ b.id)}}">
+                                        <input type="submit" class="btn btn-danger" value="supprimer">
+                                    </form>
+                                {% else %}
+                                    <a href="#" class="btn btn-success" disabled>Valider</a>
+                                    <form method="POST" style="display:inline-block" action="{{path('supBookUser', {'id': b.id})}}" onsubmit="return confirm('Confirmer la suppression')">
+                                        <input type="hidden" name="_method" value="delete">
+                                        <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ b.id)}}">
+                                        <input type="submit" class="btn btn-danger" value="supprimer">
+                                    </form>
+                                {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

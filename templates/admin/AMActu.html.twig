@@ -1,11 +1,11 @@
 {% extends 'baseAdmin.html.twig' %}
 {% block title %}Actualités{% endblock %}
 {% block monTitre %}
-    {% if edit %}
-        Modifier l'actu {{actu.title}}
-    {% else %}
-        Ajouter une Actualité
-    {% endif %}
+{% if edit %}
+Modifier l'actu {{actu.title}}
+{% else %}
+Ajouter une Actualité
+{% endif %}
 {% endblock %}
 {% block body %}
 {% if edit %}
@@ -13,26 +13,28 @@
 {% else %}
 {% set pathx = 'createActu' %}
 {% endif %}
-<form action="{{ path(pathx,{'id':actu.id}) }}" name="actu" method="post" enctype="multipart/form-data">
-    <div class="container">
-            <div class="form-group">
+<div class="container">
+    <form action="{{ path(pathx,{'id':actu.id}) }}" name="actu" method="post" enctype="multipart/form-data">
+        <div class="form-group">
             <label for="file">Ajouter une ou plusieurs images:</label>
-                <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
-            </div>
+            <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
+        </div>
         {{form_widget(form)}}
         <input type="submit" class="btn btn-primary mb-4" value="Valider">
-        <div class="row">
-            {% for a in actu.images %}
-                <div class="col-lg-4">
-                    <img src="{{asset('images/actu/' ~ a.src)}}" alt="" class="adminImg">
-                    <div class="supImg">
-                        <i class="fas fa-times fa-2x p-1 ml-2"></i>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-
     {{form_end(form)}}
-    {% endblock %}
+    <div class="row">
+        {% for a in actu.images %}
+        <div class="col-lg-4">
+            <div class="supImg">
+                <img src="{{asset('images/actu/' ~ a.src)}}" alt="" class="adminImg">
+                <a href="#" class="deleteImgActu" data-actu="{{ actu.id }}" data-photo="{{ a.id }}">
+                    <i class="fas fa-times fa-2x p-1 ml-2"></i>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
 

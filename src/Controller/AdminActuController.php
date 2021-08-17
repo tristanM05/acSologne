@@ -98,4 +98,18 @@ class AdminActuController extends AbstractController
             return $this->redirectToRoute("admin_actu");
         }
     }
+
+    /**
+     * @Route("/admin/deleteImgActu/{id}/{photo}", name="supImgActu")
+     */
+    public function deleteImg(Actu $actu, $photo, PhotosRepository $photosRepository, EntityManagerInterface $manager)
+    {
+        $image = $photosRepository->find($photo);
+        $actu->removeImage($image);
+        $manager->persist($actu);
+        $manager->flush();
+        $dist = dirname(__DIR__, 2) . '/public/images/actu/';
+        unlink($dist . $image->getSrc());
+        return $this->json(['done' => true], 200);
+    }
 }

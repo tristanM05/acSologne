@@ -1,9 +1,10 @@
 {% extends "base.html.twig" %}
 {% block body %}
 <div class="wrapper container">
-    <div class="row">
+    <div class="row actuShow">
         <div class="col-lg-9 pr-3">
             <h1 class="text-center py-5">{{actu.title}}</h1>
+            <hr id="hrContact">
             <div id="carouselExampleIndicators" class="carousel slide my-5 pl-4" data-ride="carousel">
                 <ol class="carousel-indicators">
                 {% for image in actu.images %}
@@ -30,12 +31,13 @@
                 </a>
             </div>
             <p class="pl-3">{{actu.content}}</p>
-            <div class="text-center">
+            <div class="pl-3">
                 <small>Posté le: {{actu.createdAt|date("d/m/Y")}}</small>
             </div>
+            <p class="titre pl-3">Nos autres actualités:</p>
             {% for a in other_actu %}
             <div class="row p-3 mt-5">
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center ">
                     <img src="{{asset('images/actu/' ~ a.images.first.src)}}" alt="image-actu" class="img-fluid mt-2 imgActuShow">
                 </div>   
                 <div class="col-lg-8">

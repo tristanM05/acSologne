@@ -19,6 +19,7 @@ class ActuType extends AbstractType
                 'attr' => [
                     'rows' => 10
                 ]
+                
             ])
         ;
     }

@@ -21,11 +21,15 @@
                             <div class="row">
                                 <div class="col">{{form_row(form.email)}}</div>
                             </div>
-                            {{form_widget(form)}}
+                            {{form_row(form.content)}}
                             <small>
                                 *Uniquement votre prénom et message apparaitront dans les commentaires <br>
                                 *Votre commentaire sera d'abord examiné par l'administateur du site avant d'apparaitre.
                             </small>
+                            <div class="d-flex mt-3">
+                                {{form_row(form.check)}}
+                                    <label for="check">Veuillez accepter nos <a href="{{path('consent')}}" target="blank">conditions d'utilisation</a> avant l'envoie de votre message.</label>
+                            </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block mt-4" id="btnContact">Envoyer</button>
                             </div>
@@ -40,7 +44,7 @@
             </div>
             <hr class="hrVol pb-3">
             {% for c in comment %}
-                <div class="container cardComment mt-5">
+                <div class="container cardComment mb-5">
                     <div class="card">
                         <p class="card-header text-uppercase"><strong>{{c.firstname}}</strong></p>
                         <div class="card-body">

@@ -96,4 +96,18 @@ class AdminFormationController extends AbstractController
         }
     }
 
+    /**
+     * @Route("/admin/deleteImgForm/{id}/{photo}", name="supImgFormation")
+     */
+    public function deleteImg(Formation $formation, $photo, PhotosRepository $photosRepository, EntityManagerInterface $manager)
+    {
+        $image = $photosRepository->find($photo);
+        $formation->removeImage($image);
+        $manager->persist($formation);
+        $manager->flush();
+        $dist = dirname(__DIR__, 2) . '/public/images/formation/';
+        unlink($dist . $image->getSrc());
+        return $this->json(['done' => true], 200);
+    }
+
 }

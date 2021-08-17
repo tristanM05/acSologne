@@ -1,0 +1,102 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Ajouter une nouvelle annonce</h1>
+            <hr id="hrContact" class="mb-5">
+            <div class="card volForm m-auto">
+                <h2 class="card-header">Formaulaire de création</h2>
+                <div class="card-body">
+                    {{ form_start(form) }}
+                    {{ form_row(form.title) }}
+                    {{ form_row(form.content) }}
+                    {# {{ form_row(form.dates) }} #}
+                    <ul class="dates" data-prototype="{{ form_row(form.dates.vars.prototype)|e('html_attr') }}">
+                </div>
+                <div class="card-footer">
+                    <input type="submit" class="btn btn-primary btn-block" value="Valider">
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    $('legend.col-form-label').hide();
+    var $collectionHolder;
+
+    // setup an "add a tag" link
+    var $addTagButton = $('<button type="button" class="btn btn-success add_date_link">Ajoutez une date</button>');
+    var $newLinkLi = $('<li></li>').append($addTagButton);
+
+    jQuery(document).ready(function () {
+        // Get the ul that holds the collection of tags
+        $collectionHolder = $('ul.dates');
+
+        $collectionHolder.find('li').each(function () {
+            addTagFormDeleteLink($(this));
+        });
+        // add the "add a tag" anchor and li to the tags ul
+        $collectionHolder.append($newLinkLi);
+
+
+        // count the current form inputs we have (e.g. 2), use that as the new
+        // index when inserting a new item (e.g. 2)
+        $collectionHolder.data('index', $collectionHolder.find('input').length);
+
+        $addTagButton.on('click', function (e) {
+            // add a new tag form (see next code block)
+            addTagForm($collectionHolder, $newLinkLi);
+            var $datesInputs = $collectionHolder.find('input[type="text"]');
+            $datesInputs.each(function () {
+                $(this).datepicker({
+                    format: 'dd/mm/yyyy'
+                });
+            });
+        });
+    });
+
+    function addTagForm($collectionHolder, $newLinkLi) {
+        // Get the data-prototype explained earlier
+        var prototype = $collectionHolder.data('prototype');
+
+        // get the new index
+        var index = $collectionHolder.data('index');
+
+        var newForm = prototype;
+        // You need this only if you didn't set 'label' => false in your tags field in TaskType
+        // Replace '__name__label__' in the prototype's HTML to
+        // instead be a number based on how many items we have
+        // newForm = newForm.replace(/__name__label__/g, index);
+
+        // Replace '__name__' in the prototype's HTML to
+        // instead be a number based on how many items we have
+        newForm = newForm.replace(/__name__/g, index);
+
+        // increase the index with one for the next item
+        $collectionHolder.data('index', index + 1);
+
+        // Display the form in the page in an li, before the "Add a tag" link li
+        var $newFormLi = $('<li></li>').append(newForm);
+        $newLinkLi.before($newFormLi);
+        addTagFormDeleteLink($newFormLi);
+    }
+
+    function addTagFormDeleteLink($tagFormLi) {
+        var $removeFormButton = $('<button class="btn btn-danger mb-2" type="button">Supprimer la date</button>');
+        $tagFormLi.append($removeFormButton);
+
+        $removeFormButton.on('click', function (e) {
+            // remove the li for the tag form
+            $tagFormLi.remove();
+        });
+    }
+</script>
+{% endblock %}

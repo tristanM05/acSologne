@@ -55,7 +55,7 @@ class AdminAnnonceController extends AbstractController
                 $manager->flush();
             }
 
-            $manager->remove($annonce);
+            $manager->remove($annonce);  
             $manager->flush();
             $this->addFlash("success", "la suppression a bien été éffectuée");
             return $this->redirectToRoute("admin_annonce");
@@ -67,14 +67,33 @@ class AdminAnnonceController extends AbstractController
      * 
      * @Route("/admin/annonce/{id}", name="validAnnonce", methods="valid")
      */
-    public function validation(Annonce $annonce, EntityManagerInterface $manager, Request $req)
+    public function validation(Annonce $annonce, EntityManagerInterface $manager, Request $req, \Swift_Mailer $mailer)
     {
         if ($this->isCsrfTokenValid('VAL' . $annonce->getId(), $req->get('_token'))) {
+            //variable mail
+            $user = $annonce->getuser()->getemail();
+            $title = $annonce->gettitle();
 
             $annonce->setStatus(1);
+
+            //envoie message
+            $message = (new \Swift_Message('Votre annonce a été publiée'))
+            ->setFrom('no-reply@ac-sologne.fr')
+            ->setTo($user)
+            ->setBody(
+                "<p>Votre annonce <strong>$title</strong> postée sur le site ac-sologne.fr a bien été publiée.</p>",
+                'text/html'
+            );
+
+            //on envoie le mail
+            $mailer->send($message);
+
             $manager->persist($annonce);
             $manager->flush();
             $this->addFlash("success", "la validation a bien été éffectuée");
+            return $this->redirectToRoute("admin_annonce");
+        }else{
+            $this->addFlash("warning", "Une erreur est survenue");
             return $this->redirectToRoute("admin_annonce");
         }
     }

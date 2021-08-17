@@ -25,7 +25,7 @@ class FormationController extends AbstractController
     public function allFormation(FormationRepository $repo, ActuRepository $repo_actu, CategoriesRepository $repo_cat){
 
         $actus = $repo_actu->findBy([], ["id" => "DESC"], (4));
-        $formation = $repo->findAll();
+        $formation = $repo->findBy([], ["id" => "DESC"]);
         return $this->render('formation/allFormation.html.twig', [
             'formation' => $formation,
             'side_actu' => $actus

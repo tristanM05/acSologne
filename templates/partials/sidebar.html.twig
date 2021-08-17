@@ -1,4 +1,4 @@
-            <section id="sidebar" class="pt-2 pl-2 pr-2 pb-3">
+            <section id="sidebar" class="pt-2 pr-2 pb-3 container">
                 <h5 class="text-center mt-5">Les dernières infos</h5>
                 {% for a in side_actu %}
                     <a href="{{path('actu_show', {'slug': a.slug})}}">
@@ -13,7 +13,7 @@
                     </a>
                     <hr>
                 {% endfor %}
-                    <a href="{{path('actu')}}" class="btn btn-primary mt-4">Toutes les actus !</a>
+                    <a href="{{path('actu')}}" class="btn btn-primary btn-block">Toutes les actus !</a>
                     <hr class="my-3">
                     <div class="my-5" id="cont_ee599ec6315411fced49af39335c1d38">
                         <script type="text/javascript" async src="https://www.tameteo.com/wid_loader/ee599ec6315411fced49af39335c1d38"></script>
@@ -28,6 +28,7 @@
                                 <li>Fax: 02 54 96 58 01</li>
                                 <li>Adresse: Le Bois Ribault
                                 41130 Gièvres - Loir-et-Cher</li>
+                                <li class="mt-2"><a href="https://www.facebook.com/A%C3%A9roclub-de-Sologne-1058365804207545/" target="blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
                             </ul>
 						</div>
 					</div>

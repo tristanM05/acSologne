@@ -29,7 +29,6 @@
             <td>{{u.phone}}</td>
             <td>{{u.createdAt|date("d/m/Y")}}</td>
             <td>
-                <a href="{{path('modifFormation',{'id': u.id})}}" class="btn btn-secondary">Modifier</a>
                 <form method="POST" style="display:inline-block" action="{{path('supUser',{'id':u.id})}}" onsubmit="return confirm('Confirmer la suppression')">
                 <input type="hidden" name="_method" value="delete">
                 <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ u.id)}}">

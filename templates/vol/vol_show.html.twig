@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Vols{% endblock %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row volShow">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">{{vol.title}}</h1>
+            <hr id="hrContact">
+            <div class="ml-3">
+                <p class="text-center mt-5">Annonce publiée par {{vol.user.fullname}}, le {{vol.createdAt|date("d/m/Y")}}</p>
+                <p class="mt-5 txtVol">{{vol.content}}</p>
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <strong id="titleCard">Dates disponible</strong>
+                    </div>
+                    <div class="card-body">
+                        {% for d in vol.dates %}
+                            <ul class="ulVol">
+                                <li>
+                                    {{d.date|date("d/m/Y")}} <br>
+                                    {% if d.nbPlace != 0 %}
+                                        Nombre de places disponible:  {{d.nbPlace}} 
+                                        <form method="POST" style="display:inline-block" action="{{path('validBook',{'id': d.id})}}"
+                                            onsubmit="return confirm('Confirmer la réservation ?')">
+                                            <input type="hidden" name="_method" value="valid">
+                                            <input type="hidden" name="_token" value="{{csrf_token('VAL' ~ d.id)}}">
+                                            <input type="submit" class="btn btn-success ml-4" id="book" value="Reserver ma place">
+                                        </form>
+                                    {% else %}
+                                        Nombre de places disponible:  <a href="#" class="btn btn-danger ml-2" disbled>Complet</a> 
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -6,5 +6,11 @@
         "label": "run symfony server",
         "type": "shell",
         "command": "php -S 127.0.0.1:8888 -t public"
-    }]
+    },
+    {
+        "label": "run:dev",
+        "type": "shell",
+        "command": "npm run dev",
+    }
+]
 }

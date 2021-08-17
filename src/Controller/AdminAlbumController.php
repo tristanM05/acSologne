@@ -22,7 +22,7 @@ class AdminAlbumController extends AbstractController
     public function index(AlbumRepository $repo)
     {
         $album = $repo->findAll();
-        return $this->render('admin/album.html.twig',[
+        return $this->render('admin/album.html.twig', [
             "album" => $album
         ]);
     }
@@ -38,16 +38,17 @@ class AdminAlbumController extends AbstractController
      * @param EntityManagerInterface $manager
      * @return void
      */
-    public function ajoutEtModif(Album $album = null, Request $req, EntityManagerInterface $manager){
+    public function ajoutEtModif(Album $album = null, Request $req, EntityManagerInterface $manager)
+    {
 
-        if(!$album){
+        if (!$album) {
             $album = new Album();
         }
 
         $form = $this->createForm(AlbumType::class, $album);
 
         $form->handleRequest($req);
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
             $modif = $album->getId() !== null;
             $manager->persist($album);
             $manager->flush();
@@ -59,11 +60,11 @@ class AdminAlbumController extends AbstractController
             foreach ($images_album as $image) {
                 $uploader::upload_album($image, $dist, $album, $manager);
             }
-            $this->addFlash("success", ($modif) ? "la modification a bien été éffectuée" : "l'ajout a bien été effectué " );
+            $this->addFlash("success", ($modif) ? "la modification a bien été éffectuée" : "l'ajout a bien été effectué ");
             return $this->redirectToRoute("admin_album");
         }
 
-        return $this->render('admin/AMAlbum.html.twig',[
+        return $this->render('admin/AMAlbum.html.twig', [
             "album" => $album,
             "form" => $form->createView(),
             'edit' => $album->getId() !== null
@@ -77,19 +78,33 @@ class AdminAlbumController extends AbstractController
      */
     public function suppression(Album $album, EntityManagerInterface $manager, Request $req, PhotosRepository $repo)
     {
-        if($this->isCsrfTokenValid('SUP'.$album->getId(), $req->get('_token'))){
+        if ($this->isCsrfTokenValid('SUP' . $album->getId(), $req->get('_token'))) {
             $images = $repo->findBy(["album" => $album]);
 
-            $dist = dirname(__DIR__,2) . '/public/images/album/';
+            $dist = dirname(__DIR__, 2) . '/public/images/album/';
             foreach ($images as $image) {
-                unlink($dist.$image->getSrc());
+                unlink($dist . $image->getSrc());
                 $manager->remove($image);
                 $manager->flush();
             }
             $manager->remove($album);
             $manager->flush();
-            $this->addFlash("success","la suppression a bien été éffectuée" );
+            $this->addFlash("success", "la suppression a bien été éffectuée");
             return $this->redirectToRoute("admin_album");
         }
+    }
+    
+    /**
+     * @Route("/admin/deleteImg/{id}/{photo}", name="supImg")
+     */
+    public function deleteImg(Album $album, $photo, PhotosRepository $photosRepository, EntityManagerInterface $manager)
+    {
+        $image = $photosRepository->find($photo);
+        $album->removeImage($image);
+        $manager->persist($album);
+        $manager->flush();
+        $dist = dirname(__DIR__, 2) . '/public/images/album/';
+        unlink($dist . $image->getSrc());
+        return $this->json(['done' => true], 200);
     }
 }

@@ -91,4 +91,18 @@ class AdminMachinesController extends AbstractController
             return $this->redirectToRoute("admin_machines");
         }
     }
+
+    /**
+     * @Route("/admin/deleteImgMachine/{id}/{photo}", name="supImgMachine")
+     */
+    public function deleteImg(Machines $machine, $photo, PhotosRepository $photosRepository, EntityManagerInterface $manager)
+    {
+        $image = $photosRepository->find($photo);
+        $machine->removeImage($image);
+        $manager->persist($machine);
+        $manager->flush();
+        $dist = dirname(__DIR__, 2) . '/public/images/machines/';
+        unlink($dist . $image->getSrc());
+        return $this->json(['done' => true], 200);
+    }
 }

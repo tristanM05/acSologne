@@ -4,13 +4,14 @@
 
 {% block body %}
 <div class="wrapper container">
-    <div class="row">
+    <div class="row machineIndex">
         <div class="col-lg-9">
             {% if category.libelle != 'moteur' %}
                 <h1 class="text-center py-5">Les Planeurs</h1>
             {% else %}
             <h1 class="text-center py-5">Les Avions et ULM</h1>
             {% endif %}
+            <hr id="hrContact">
             {% for m in category.machine %}
             <div class="row p-3 mt-2">
                 <div class="col-lg-4">

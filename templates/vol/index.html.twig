@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Vols{% endblock %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row" id="indexVol   ">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Les vols disponible</h1>
+            <hr id="hrContact" class="mb-5">
+            {% for message in app.flashes('success') %}
+                <div class="container alert alert-success text-center" style="width:90%">
+                    {{message}}
+                </div>
+            {% endfor %}
+            {% for v in vol %}
+                {% for d in v.dates %}
+                    {% if d.date|date("m/d/Y") > "now"|date("m/d/Y")  %}
+                        <div class="card adsVol m-auto">
+                        <div class="card-header d-flex">
+                            <h2>{{v.title}}</h2>
+                            <p class="ml-auto" id="postBy">posté par: <strong>{{v.user.fullname}}</strong> le {{v.createdAt|date('d/m/Y')}}</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                {% if v.content | length >=   200 %}
+                                <td>{{v.content | slice(0, 200)}}... <a href="{{path('vol_show',{'slug': v.slug})}}">Voir plus</a> </td>
+                                {% else %}
+                                <td>{{v.content}}</td>
+                                {% endif %}
+                            </p>
+                            <p>Dates disponible:</p>
+                                <ul>
+                                    <li>{{d.date|date('d/m/Y')}}</li>
+                                </ul>
+                            <a href="{{path('vol_show',{'slug': v.slug})}}" class="btn btn-primary">Réserver ici</i></a>
+                        </div>
+                    </div>
+                <hr class="hrVol my-5">
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    
+{% endblock %}

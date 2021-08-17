@@ -57,6 +57,12 @@ class Comment
     private $status = 0;
 
     /**
+     * @var checkbox|null
+     *  @Assert\IsTrue(message="Veuillez prendre connaissance des conditions général et chocher la case.")
+     */
+    private $check;
+
+    /**
      * met en place la date de création
      * 
      * @ORM\PrePersist
@@ -144,6 +150,30 @@ class Comment
     public function setStatus(bool $status): self
     {
         $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of check
+     *
+     * @return  string|null
+     */ 
+    public function getCheck()
+    {
+        return $this->check;
+    }
+
+    /**
+     * Set the value of message
+     *
+     * @param  checkbox|null  $check
+     *
+     * @return  self
+     */ 
+    public function setCheck($check)
+    {
+        $this->check = $check;
 
         return $this;
     }

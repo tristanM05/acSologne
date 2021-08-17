@@ -43,6 +43,12 @@ class Contact{
      */
     private $message;
 
+    /**
+     * @var checkbox|null
+     * 
+     */
+    private $check;
+
 
     /**
      * Get the value of firstname
@@ -160,6 +166,30 @@ class Contact{
     public function setMessage($message)
     {
         $this->message = $message;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of check
+     *
+     * @return  string|null
+     */ 
+    public function getCheck()
+    {
+        return $this->check;
+    }
+
+    /**
+     * Set the value of message
+     *
+     * @param  checkbox|null  $check
+     *
+     * @return  self
+     */ 
+    public function setCheck($check)
+    {
+        $this->check = $check;
 
         return $this;
     }

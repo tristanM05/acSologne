@@ -46,7 +46,7 @@ class UserAnnonceController extends AbstractController
 
         $form->handleRequest($req);
         if ($form->isSubmitted() && $form->isValid()) {
-            // $notification->notify($annonce);
+            $notification->notify($annonce);
             $annonce->setStatus(0);
             $annonce->setUser($this->getUser());
             $manager->persist($annonce);
@@ -101,7 +101,7 @@ class UserAnnonceController extends AbstractController
             foreach ($images as $image) {
                 $uploader::upload_annonce($image, $dist, $annonce, $manager);
             }
-            $this->addFlash("success", "la modification a bien été effectué. Votre annonce est de nouveau en attente de confirmation ");
+            $this->addFlash("success", "la modification a bien été effectuée. Votre annonce est de nouveau en attente de confirmation ");
             return $this->redirectToRoute("userAnnonce");
         }
 
@@ -134,5 +134,19 @@ class UserAnnonceController extends AbstractController
             $this->addFlash("success", "la suppression a bien été éffectuée");
             return $this->redirectToRoute("userAnnonce");
         }
+    }
+
+    /**
+     * @Route("/user/deleteImgUser/{id}/{photo}", name="supImgAds")
+     */
+    public function deleteImg(Annonce $annonce, $photo, PhotosRepository $photosRepository, EntityManagerInterface $manager)
+    {
+        $image = $photosRepository->find($photo);
+        $annonce->removeImage($image);
+        $manager->persist($annonce);
+        $manager->flush();
+        $dist = dirname(__DIR__, 2) . '/public/images/annonce/';
+        unlink($dist . $image->getSrc());
+        return $this->json(['done' => true], 200);
     }
 }

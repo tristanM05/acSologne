@@ -9,24 +9,42 @@
             <h1 class="text-center py-5">Modifier mes informations</h1>
             <hr id="hrModif">
             {% for message in app.flashes('success') %}
-                <div class="container alert alert-success text-center" id="alertInfo">
-                    {{message}}
-                </div>
+            <div class="container alert alert-success text-center" id="alertInfo">
+                {{message}}
+            </div>
             {% endfor %}
-            <div class="conatiner" id="formInfo">
-                <div class="my-5">
-                    <h2>Modifier mon email:</h2>
-                    {{ form_start(form_info) }}
-                    {{ form_widget(form_info) }}
-                    <input type="submit" class="btn btn-primary mt-2" value="Valider">
-                    {{ form_end(form_info) }}
+            <div class="container pl-5">
+                <div class="row info m-auto">
+                    <div class="card mb-5">
+                        <h2 class="card-header">Modifier mon email et/ou téléphone</h2>
+                        <div class="card-body d-flex">
+                            <div class="col-lg-6 col-sm-12 mt-5">
+                                {{ form_start(form_info) }}
+                                {{ form_widget(form_info) }}
+                                <input type="submit" class="btn btn-primary mt-2 btn-block" value="Valider">
+                                {{ form_end(form_info) }}
+                            </div>
+                            <div class="col-lg-6 imgInfo">
+                                <img src="/images/undraw3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2>Modifier mon mot de passe:</h2>
-                    {{ form_start(form) }}
-                    {{ form_widget(form) }}
-                    <input type="submit" class="btn btn-primary mt-2" value="Valider">
-                    {{ form_end(form) }}
+                <div class="row">
+                    <div class="card">
+                        <h2 class="card-header">Modifier mon mot de passe</h2>
+                        <div class="card-body d-flex">
+                            <div class="col-lg-6 col-sm-12">
+                                {{ form_start(form) }}
+                                {{ form_widget(form) }}
+                                <input type="submit" class="btn btn-primary mt-2 btn-block" value="Valider">
+                                {{ form_end(form) }}
+                            </div>
+                            <div class="col-lg-6 imgInfo">
+                                <img src="/images/undraw.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

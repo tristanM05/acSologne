@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Mes réservation</h1>
+            <hr id="hrContact">
+            <div class="d-flex ml-5 mb-5">
+            </div>
+            {% for message in app.flashes('success') %}
+            <div class="container alert alert-success mt-3 text-center" id="alertAds">
+                {{message}}
+            </div>
+            {% endfor %}
+            {% for a in app.user.bookings  %}
+                    <div class="card adsVol m-auto">
+                        <h2 class="card-header">{{a.date.vol.title}}</h2>
+                        <div class="card-body">
+                            <p>{{a.date.vol.content}}</p>
+                            <p>Ma date réservé: {{a.date.date|date("d/m/Y")}}</p>
+                            <p>Coordonées de l'hôte:</p>
+                            <ul>
+                                <li>Nom: {{a.date.vol.user.fullName}}</li>
+                                <li>Email: {{a.date.vol.user.email}}</li>
+                                <li>Téléphone: {{a.date.vol.user.phone}}</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            {% if a.status != 1 %}
+                                <p class="btn btn-info">En cours de validation...</p>
+                            {% else %}
+                                <p class="btn btn-success">Valider !</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                <div class="adsVol m-auto">
+                    <hr class="hrVol my-5">
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

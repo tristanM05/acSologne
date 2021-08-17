@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Contact;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -31,7 +32,11 @@ class ContactType extends AbstractType
                 'attr' => [
                     'rows' => 10,
                     'cols' => 20
-                ]
+                    ]
+            ])
+            ->add('check', CheckboxType::class,[
+                'label' => false,
+                'required' => true
             ])
             
         ;

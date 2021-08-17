@@ -9,9 +9,9 @@
 {% endblock %}
 {% block body %}
 {% if edit %}
-{% set pathx = 'modifMachine' %}
+    {% set pathx = 'modifMachine' %}
 {% else %}
-{% set pathx = 'createMachine' %}
+    {% set pathx = 'createMachine' %}
 {% endif %}
 <form action="{{ path(pathx,{'id':machine.id}) }}" name="machines" method="post" enctype="multipart/form-data">
 <div class="container-fluid">
@@ -31,12 +31,21 @@
             <div class="form-group">
                 <input type="file" multiple class="form-control dropzone mt-3" name="photos[]" id="photos">
             </div>
-            {% for m in machine %}
-                <img src="{{asset('images/machines/' ~ m.images.src)}}" alt="">
-            {% endfor %}
-            <input type="submit" class="btn btn-primary mt-2" value="Valider">
+            <input type="submit" class="btn btn-primary mt-2 mb-4" value="Valider">
+            {{form_end(form)}}
+            <div class="row">
+                {% for m in machine.images %}
+                    <div class="col-lg-6">
+                        <div class="supImg">
+                            <img src="{{asset('images/machines/' ~ m.src)}}" alt="imageMachine" class="adminImg">
+                            <a href="#" class="deleteImgMachine" data-machine="{{ machine.id }}" data-photo="{{ m.id }}">
+                                <i class="fas fa-times fa-2x p-1 ml-2"></i>
+                            </a>
+                        </div>  
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-        {{form_end(form)}}
     </div>
 </div>
 {% endblock %}

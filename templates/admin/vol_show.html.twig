@@ -1,0 +1,20 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block title %}Vol{% endblock %}
+{% block monTitre %}Annonce de {{vol.user.firstname}} {{vol.user.lastname}}{% endblock %}
+{% block body %} 
+    <div class="container">
+        <h2 class="my-4">{{vol.title}}</h2>
+        <p class="mb-5">{{vol.content}}</p>
+        {% for v in vol.dates %}
+            <p>dates prévue:
+                <ul>
+                    <li>
+                        Le {{v.date|date("d/m/Y")}}<br>
+                        Nombre de place proposées {{v.nbPlace}}
+                    </li>
+                    
+                </ul>
+            </p>
+        {% endfor %}
+    </div>
+{% endblock %}

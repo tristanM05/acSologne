@@ -26,7 +26,7 @@ class AnnonceNotification
     public function notify(Annonce $annonce)
     {
         $message = (new \Swift_Message('nouvelle annonce en attente de confirmation'))
-            ->setFrom($annonce->getEmail())
+            ->setFrom('no-reply@ac-sologne.fr')
             ->setTo('contact@mail.fr')
             ->setBody($this->renderer->render('emails/annonce.html.twig', [
                 'annonce' => $annonce

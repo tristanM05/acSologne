@@ -5,9 +5,10 @@
         <div class="col-lg-9">
             <h1 class="text-center py-5">Ajouter une nouvelle annonce</h1>
             <hr id="hrContact">
-            <div class="adsForm">
+            <div class="adsForm card mb-5">
+            <h2 class="mb-4 card-header">Création de l'annonce</h2>
                 <form action="{{ path('createAnnonce') }}" name="annonce" method="post" enctype="multipart/form-data">
-                    <div>
+                    <div class="card-body">
                         {{ form_row(form.title) }}
                         {{ form_row(form.annonceCat) }}
                         <div class="mb-3">
@@ -15,8 +16,10 @@
                             <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
                         </div>
                         {{ form_row(form.content) }}
-                        <input type="submit" class="btn btn-primary" value="Valider">
                     </div>
+            <div class="card-footer">
+                <input type="submit" class="btn btn-primary btn-block" value="Valider">
+            </div>
                 {{ form_end(form) }}
             </div>
         </div>

@@ -1,0 +1,66 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row editVol">
+        <div class="col-lg-9">
+        <h1 class="text-center py-5">Modifier une annonce</h1>
+            <hr id="hrContact" class="mb-5">
+            <div class="card volForm m-auto">
+            <h2 class="card-header">Formulaire d'édition</h2>
+                <div class="card-body">
+                    {{ form_start(form) }}
+                    {{ form_row(form.title) }}
+                    {{ form_row(form.content) }}
+                    <label for="date">Entrer jusqu'a trois dates de vol:</label>
+                    <ul class="tags mt-2 d-flex" data-prototype="{{ form_widget(form.dates.vars.prototype)|e('html_attr') }}">
+                        {% for date in form.dates %}
+                            <li class="mr-2">{{ form_row(date.date) }}</li>
+                            <li class="mr-5" >{{ form_row(date.nbPlace) }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <input type="submit" class="btn btn-primary btn-block" value="Valider" id="validVol">
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+    <script>
+        var $collectionHolder ;
+        var $addTagButton = $('<button type="button" class="add_tag_link">Ajouter un tag</button>') ;
+        var $newLinkLi = $('<li></li>').append($addTagButton) ;
+
+        jQuery(document).ready(function() {
+
+        $collectionHolder = $('ul.tags') ;
+        $collectionHolder.append($newLinkLi) ;
+        $collectionHolder.data('index', $collectionHolder.find('input').length) ;
+
+        $addTagButton.on('click', function(e) {
+        addTagForm($collectionHolder, $newLinkLi) ;
+    });
+
+}) ;
+        fonction addTagForm($collectionHolder, $newLinkLi) {
+        var prototype = $collectionHolder.data("prototype") ;
+        var index = $collectionHolder.data('index') ;
+
+        var newForm = prototype ;
+        newForm = newForm.replace(/__nom__/g, index) ;
+
+        $collectionHolder.data('index', index + 1) ;
+
+        var $newFormLi = $('<li></li>').append(newForm) ;
+        $newLinkLi.before($newFormLi) ;
+    }
+
+    </script>
+{% endblock %}

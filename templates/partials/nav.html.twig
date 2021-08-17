@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-lg ">
 		<a class="navbar-brand" href="{{path('homepage')}}"><img src="/images/logo.png" alt=""></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,7 +21,7 @@
 						<a class="dropdown-item" href="{{path('decouvrir_le_vol')}}">Découvir le vol</a>
 						<a class="dropdown-item" href="{{path('infrastructure')}}">Les infrastructure</a>
 						<a class="dropdown-item" href="{{path('allFormation')}}">Les formations</a>
-						<a class="dropdown-item" href="{{path('bia')}}">BIA</a>
+						{# <a class="dropdown-item" href="{{path('bia')}}">BIA</a> #}
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -62,22 +62,24 @@
                     <a class="nav-link" href="{{path('comment')}}">Livre d'or</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{path('contact')}}">Contact</a>
+                    <a class="nav-link mr-3" href="{{path('contact')}}">Contact</a>
 				</li>
 				{% if app.user %}
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle btn btn-success ml-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="nav-link dropdown-toggle btn btn-success ml-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						{{app.user.fullName}}
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="{{path('user_info')}}">Modifier mes infos</a>
 						<a class="dropdown-item" href="{{path('userAnnonce')}}">Mes annonces</a>
+						<a class="dropdown-item" href="{{path('user_vol')}}">Mes propositions de vols</a>
+						<a class="dropdown-item" href="{{path('vol')}}">Voir tout les vols</a>
 					    <a class="dropdown-item" id="decoUser" href="{{path('user_logout')}}">Deconnexion</a>
 					</div>
 				</li>
 				{% else %}
 					<li class="nav-item">
-                	    <a class="btn btn-success ml-4" href="{{path('user_log')}}">Espace Membres</a>
+                	    <a class="btn btn-success" href="{{path('user_log')}}">Espace Membres</a>
                 	</li>
 				{% endif %}
 				

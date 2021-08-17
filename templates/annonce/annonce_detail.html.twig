@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 {% block body %}
-<div class="wrapper container">
+<div class="wrapper container adsShow">
     <div class="row">
         <div class="col-lg-9 pr-3">
             <h1 class="text-center py-5">{{annonce.title}}</h1>
@@ -37,7 +37,7 @@
                             <strong id="titleCard">Contact pour cette annonce</strong>
                         </div>
                         <div class="card-body">
-                            <ul id="ulMachine">
+                            <ul class="ulAds">
                                 <li><strong>E-mail:</strong> {{annonce.user.email}}</li>
                                 <li><strong>Telephone</strong>: {{annonce.user.phone}}</li>
                             </ul>
