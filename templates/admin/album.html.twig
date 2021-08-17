@@ -1,0 +1,43 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Album{% endblock %}
+
+{% block monTitre %}Les albums{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-2">
+        <a href="{{ path('createAlbum') }}" class="btn btn-success m-4">Ajoutez</a>
+    </div>
+    <div class="col-10 p-0">
+        {% for message in app.flashes('success') %}
+        <div class="container alert alert-success m-0 text-center">
+            {{message}}
+        </div>
+{% endfor %}
+    </div>
+</div>
+<table class="table table-hover text-center">
+    <tr class="table-primary">
+        <td>Titre</td>
+        <td>Date de création</td>
+        <td>description</td>
+        <td>Actions</td>
+    </tr>
+    {% for a in album %}
+        <tr>
+            <td><strong>{{a.titre}}</strong></td>
+            <td>{{a.createdAt|date("m/d/Y")}}</td>
+            <td>{{a.description | slice(0, 100)}}... <a href="{{path('modifAlbum',{'id': a.id})}}">Voir plus</a> </td>
+            <td>
+                <a href="{{path('modifAlbum',{'id': a.id})}}" class="btn btn-secondary">Modifier</a>
+                <form method="POST" style="display:inline-block" action="{{path('supAlbum',{'id':a.id})}}" onsubmit="return confirm('Confirmer la suppression')">
+                <input type="hidden" name="_method" value="delete">
+                <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ a.id)}}">
+                    <input type="submit" class="btn btn-danger" value="supprimer">
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

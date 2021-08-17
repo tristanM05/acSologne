@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9 pr-3">
+            <h1 class="text-center pt-5 pb-3">{{formation.title}}</h1>
+            <div id="carouselExampleIndicators" class="carousel slide my-5 pl-4" data-ride="carousel">
+                <ol class="carousel-indicators">
+                {% for image in formation.images %}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{loop.index0}}" {% if loop.first %}class="active" {% endif %}></li>
+                {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for image in formation.images %}
+                        <div class="carousel-item {% if loop.first %}active {% endif %}">
+                            <img src="{{asset('images/formation/' ~ image.src)}}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ formation.title }}</h5>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <hr class="hrVol pb-5">
+            <div class="pl-4">
+                <p>{{formation.content|raw}}</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

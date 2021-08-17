@@ -1,0 +1,11 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block title %}Admin{% endblock %}
+{% block monTitre %}Modifier le tarif de la catégorie {{categ.libelle}}{% endblock %}
+{% block body %}
+    {{form_start(form)}}
+    <div class="container">
+        {{form_row(form.tarifFile)}}
+        <input type="submit" class="btn btn-primary" value="Valider">
+    </div>
+    {{form_end(form)}}
+{% endblock %}

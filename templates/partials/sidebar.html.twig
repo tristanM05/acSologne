@@ -1,0 +1,34 @@
+            <section id="sidebar" class="pt-2 pl-2 pr-2 pb-3">
+                <h5 class="text-center mt-5">Les dernières infos</h5>
+                {% for a in side_actu %}
+                    <a href="{{path('actu_show', {'slug': a.slug})}}">
+                        <div class="row mt-5">
+                            <div class="col-lg-5">
+                                <img src="{{asset('images/actu/' ~ a.images.first.src)}}" alt="" class="img-fluid imgSide">
+                            </div>
+                            <div class="col-lg-7">
+                                <p>{{a.content|slice(0,100)}}...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                {% endfor %}
+                    <a href="{{path('actu')}}" class="btn btn-primary mt-4">Toutes les actus !</a>
+                    <hr class="my-3">
+                    <div class="my-5" id="cont_ee599ec6315411fced49af39335c1d38">
+                        <script type="text/javascript" async src="https://www.tameteo.com/wid_loader/ee599ec6315411fced49af39335c1d38"></script>
+                    </div>
+                    <hr>
+                    <div class="card blue my-5">
+						<div class="card-body">
+							<h5 class="card-title text-white pl-5">Contact</h5>
+                            <ul class="p-0 pl-5">
+                                <li>Aéroclub de Sologne</li>
+                                <li>Tel: 02 54 96 35 07</li>
+                                <li>Fax: 02 54 96 58 01</li>
+                                <li>Adresse: Le Bois Ribault
+                                41130 Gièvres - Loir-et-Cher</li>
+                            </ul>
+						</div>
+					</div>
+                </section>

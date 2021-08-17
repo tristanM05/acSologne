@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les formation{% endblock %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Nos stages et formations</h1>
+            {% for f in formation %}
+            <div class="row p-3 mt-2">
+                <div class="col-lg-4">
+                    <img src="{{asset('images/formation/' ~ f.images.first.src)}}" alt="" class="img-fluid mt-2 imgActu">
+                </div>   
+                <div class="col-lg-8">
+                    <h2>{{f.title}}</h2>
+                    <p>
+                        Toutes les informations !
+                    </p>
+                    <a href="{{path('formation_show', {'slug': f.slug})}}"><i class="fas fa-book-open btn btn-primary mr-2"></i></a>
+                </div>
+            </div>
+            <hr class="hrVol my-5">
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

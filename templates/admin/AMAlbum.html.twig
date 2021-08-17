@@ -1,0 +1,35 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block title %}Album{% endblock %}
+{% block monTitre %}
+    {% if edit %}
+        Modifier l'album {{album.titre}}
+    {% else %}
+        Ajouter un nouvel Album
+    {% endif %}
+{% endblock %}
+{% block body %}
+{% if edit %}
+{% set pathx = 'modifAlbum' %}
+{% else %}
+{% set pathx = 'createAlbum' %}
+{% endif %}
+<form action="{{ path(pathx,{'id':album.id}) }}" name="album" method="post" enctype="multipart/form-data">
+<div class="container">
+    <div class="custom-file">
+        <input type="file" multiple class="form-controle" name="photos[]" id="photos">
+    </div>
+    {{form_widget(form)}}
+    <input type="submit" class="btn btn-primary" value="Valider">
+{{form_end(form)}}
+    <div class="row">
+            {% for a in album.images %}
+                <div class="col-lg-4">
+                    <img src="{{asset('images/album/' ~ a.src)}}" alt="" class="adminImg">
+                    <div class="supImg">
+                        <i class="fas fa-times fa-2x p-1 ml-2"></i>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+</div>
+{% endblock %}

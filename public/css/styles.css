@@ -1,0 +1,343 @@
+nav{
+    background-color: #1f8bd4;
+}
+
+nav li a{
+    color: white;
+    transition: color .3s;
+}
+
+nav li a:hover{
+    color: rgb(202, 202, 202);
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+}
+
+nav #decoUser{
+    color: red;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #1f8bd4;
+    height: 50px;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image:url(../images/ciel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper{
+    padding: 0;
+}
+.wrapper{
+    background-color: white;
+}
+.wrapper hr{
+    border-color: #1f8bd4;
+}
+h1{
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.imgSlide{
+    width: 1000px;
+    height: 600px;
+}
+
+/************ BOOTSTRAP ****************/
+.btn-primary{
+    transition: 0.4s !important;
+    border-radius: 0px !important;
+    background-color:#1f8bd4 ;
+}
+.btn-primary:hover{
+    background-color:#ff7c10 !important;
+    border-color: #ff7c10;
+    border-radius: 10px !important;
+}
+
+.btn-success{
+    border-radius: 0px !important;
+}
+/************ BOOTSTRAP ****************/
+
+/**************** SIDEBAR ********************/
+
+    #sidebar{
+        background-color: white;
+    }
+    #sidebar p{
+        font-size: 12px;
+        color: black;
+    }
+    #sidebar h5{
+        color: black;
+    }
+    #sidebar li{
+        font-size: 12px;
+    }
+
+    .imgSide{
+        width: 140px;
+        height: 70px;
+    }
+
+
+/**************** SIDEBAR ********************/
+
+/**************** HOME ********************/
+
+/* banner */
+
+#banner{
+    height: 350px;
+    background-image: url(../images/homepic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner_title{
+    width: 35%;
+    background-color: #1f8cd48c;
+    margin-left: 80px;
+    
+}
+
+#banner_title h1{
+}
+
+/* banner */
+.imgHome1{
+    width: 350px;
+    height: 215px;
+}
+.imgHome2{
+    width: 280px;
+    height: 170px;
+    padding-right: 15px;
+}
+.imgHome3{
+    width: 140px;
+    height: 100px;
+}
+h3{
+    font-size: 25px;
+}
+.blue{
+    background-color: #1f8bd4;
+    color: white;
+    border-radius: 0px !important;
+}
+.blue ul{
+    list-style-type: none;
+}
+.orange{
+    background-color: #ff7c10;
+    color: white;
+    border-radius: 0px !important;
+}
+p{
+    color: #424242;
+}
+
+
+/**************** HOME ********************/
+
+/**************** DECOUVRIR_LE_VOL ********************/
+
+.imgVol{
+    width: 360px;
+    height: 240px;
+}
+
+.hrVol{
+    width: 65%;
+}
+
+/**************** DECOUVRIR_LE_VOL ********************/
+
+/********************** BIA ***************************/
+
+.pbia{
+    font-size: 18px;
+    color: #424242;
+}
+
+/********************** BIA ***************************/
+
+/********************** page actu_show ***************************/
+
+.imgActuShow{
+    width: 200px;
+    height: 120px;
+}
+
+/********************** page actu_show ***************************/
+
+/********************** page actu ***************************/
+
+.imgActu{
+    width: 320px;
+    height: 200px;
+}
+
+/********************** page actu ***************************/  
+
+/********************** machine_show ***************************/
+
+#ulMachine{
+    list-style-type: none;
+}
+
+#ulMachine strong{
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#ulMachine li{
+    font-size: 20px;
+}
+
+#pShowMachine{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+#titleCard{
+    font-size: 25px;
+}
+
+.cardMachine{
+    width: 60%;
+}
+
+/********************** machine_show ***************************/
+
+/********************** album_show ***************************/
+
+.imgAlbum{
+    width: 340px;
+    height: 250px;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.imgAlbum:hover{
+    cursor: pointer;
+    width: 335px;
+    height: 245px;
+}
+#aAlbum{
+    color: white;
+}
+
+#pAlbum{
+    font-size: 18px;
+}
+
+
+/********************** album_show ***************************/
+
+/********************** contact ***************************/
+
+#contactForm{
+    margin-top: 100px;
+}
+
+#hrContact{
+    width: 90%;
+}
+
+#btnContact{
+    font-size: 25px;
+}
+/********************** contact ***************************/
+
+/********************** formation ***************************/
+
+#titleFormation{
+    font-size: 35px;
+}
+#pFormation{
+    font-size: 20px;
+}
+
+/********************** formation ***************************/
+
+/********************** comment ***************************/
+
+.commentForm{
+    width: 100px
+}
+
+.imgComment{
+    width: 200px;
+    height: 180px;
+}
+
+.cardComment{
+    width: 70%;
+}
+
+#alertComment{
+    width: 90%;
+}
+
+/********************** comment ***************************/
+
+/********************** user/modif info ***************************/
+
+#formInfo{
+    width: 90%;
+    padding-left: 200px;
+}
+
+#hrModif{
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+#alertInfo{
+    width: 90%;
+}
+
+/********************** user/modif info ***************************/
+
+/********************** user/annonce ***************************/
+
+#alertAds{
+    width: 90%;
+}
+
+.adsForm{
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.adsP{
+    font-size: 20px;
+}
+
+.adsImg{
+    width: 280px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/********************** user/annonce ***************************/
+
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1400px;
+}
+}

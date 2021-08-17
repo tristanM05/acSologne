@@ -1,0 +1,155 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<section class="wrapper container">
+		<header>
+			<div id="banner">
+				
+			</div>
+		</header>
+		<section class="bodypage">
+			<div class="row p-3 pb-5">
+				<div class="col-lg-8">
+					<hr>
+					<h1 class="my-4">Aero club de Sologne</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur, officia laudantium numquam earum in vel minus    veniam ipsam beatae id voluptatum animi necessitatibus expedita iusto et perferendis. Culpa adipisci illo magni consectetur    reprehenderit, voluptatem excepturi tenetur voluptate esse perspiciatis sed provident exercitationem magnam distinctio     aperiam quas minima natus corrupti architecto consequatur? Exercitationem sapiente labore, reprehenderit, dolorum   recusandae maiores impedit hic id debitis voluptas voluptates odio eum esse distinctio laborum!
+					</p>
+					<div class="row pt-5">
+						<div class="col-lg-6">
+							<div>
+								<img src="/images/avion1.jpg" alt="" class="imgHome1">
+								<h3 class="mt-3">Un Parc machine moderne</h3>
+								<p>{{"L'Aéroclub de Sologne renouvelle constamment son parc machine afin d'apporter toujours plus de modernité. Coté avion, l'Aéroclub de Sologne a acquis dernièrement un Robin DR400 Ecoflyer 155/CDI pour l'école et le voyage. Côté planeur, le club est fier de ses planeurs de performance : Ventus 2 CxT, Discus 2b et et Nimbus 4DT."|slice(0,120)}}...</p>
+								<a href="#" class="btn btn-primary p-2 mb-4">Lire plus</a>
+							</div>
+							<div>
+								<img src="/images/terrain.jpg" alt="" class="imgHome1">
+								<h3 class="mt-3">Une plateforme exeptionelle</h3>
+								<p>{{"A seulement 2h de Paris, l'Aéroclub de Sologne est idéalement placé au coeur de la Sologne, au milieu d'un espace aérien non contrôlé. En plus d'une aérologie remarquable, vous trouverez sur le terrain deux pistes (950m et 1100m de long), une station essence automatique Total... Vous ne manquerez de rien ! Et en cas de mauvais temps, vous pouvez profiter des attractions touristiques de la région : zoo de Beauval, châteaux de la Loire, Center Parcs."|slice(0,120)}}...</p>
+								<a href="#" class="btn btn-primary p-2">Lire plus</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div>
+								<img src="/images/ecole.jpg" alt="" class="imgHome1">
+								<h3 class="mt-3">Une école reconnue</h3>
+								<p>{{"Notre école de pilotage vous accueille 7j/7. Les instructeurs chevronnés de l'Aéroclub de Sologne, toujours disponibles, vous permettront d'apprendre à piloter et de vous perfectionner, que ce soit en avion, en planeur ou en ULM."|slice(0,120)}}...</p>
+								<a href="#" class="btn btn-primary p-2 mb-4">Lire plus</a>
+							</div>
+							<div>
+								<img src="/images/img11.jpg" alt="" class="imgHome1">
+								<h3 class="mt-3">Un Parc machine moderne</h3>
+								<p>{{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia molestiae quo fugit, excepturi earum illum doloremque maxime consectetur repellendus?"|slice(0,120)}}...</p>
+								<a href="#" class="btn btn-primary p-2">Lire plus</a>
+							</div>
+						</div>
+					</div>
+					<hr class="my-5">
+					<h2 class="mb-5">Le Club</h2>
+					<div class="row">
+						<div class="col-lg-4">
+							<img src="/images/viplaneur.jpg" alt="" class="imgHome2">
+						</div>
+						<div class="col-lg-8 mb-4">
+							<h3>Découvrir le vol</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque a obcaecati similique pariatur magni quasi libero atque odio, doloribus nobis.</p>
+							<a href="{{path('decouvrir_le_vol')}}" class="btn btn-primary mb-4">plus</a>
+						</div>
+						<div class="col-lg-4">
+							<img src="/images/bar.jpg" alt="" class="imgHome2">
+						</div>
+						<div class="col-lg-8 mb-4">
+							<h3>Les Infrastructure</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque a obcaecati similique pariatur magni quasi libero atque odio, doloribus nobis.</p>
+							<a href="{{path('infrastructure')}}" class="btn btn-primary mb-4">plus</a>
+						</div>
+						<div class="col-lg-4">
+							<img src="/images/bia.jpg" alt="" class="imgHome2">
+						</div>
+						<div class="col-lg-8 mb-4">
+							<h3>Le BIA</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque a obcaecati similique pariatur magni quasi libero atque odio, doloribus nobis.</p>
+							<a href="{{path('bia')}}" class="btn btn-primary mb-4">plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pt-3">
+					<div class="card p-4 blue">
+						<div class="card-body">
+							<h4 class="card-title">Les avions</h4>
+							<div class="row">
+                                <div class="col-lg-10">
+                                    <p class="text-white">
+                                        De la formation initiale au perfectionnement du pilotage, notre école de pilotage est ouverte toute l'année.
+                                    </p>
+                                </div>
+                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'section_moteur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                            </div>
+						</div>
+					</div>
+                    <div class="card p-4 orange">
+						<div class="card-body">
+							<h4 class="card-title">Les planeurs</h4>
+							<div class="row">
+                                <div class="col-lg-10">
+                                    <p class="text-white">
+                                        Notre gamme s'étend de la formation initiale à la haute compétition. La saison de planeur couvre une période de mars à octobre en fonction des conditions météorologiques.
+                                    </p>
+                                </div>
+                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'section_planneur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                            </div>
+						</div>
+					</div>
+                    <div class="card p-4 blue">
+						<div class="card-body">
+							<h4 class="card-title">Les ULM</h4>
+							<div class="row">
+                                <div class="col-lg-10">
+                                    <p class="text-white">
+                                        Multiaxes, équipé pour la formation et la navigation, il est également muni d'un parachute balistique pour plus de sécurité.
+                                    </p>
+                                </div>
+                                <div class="col-lg-2 p-0"><a href="{{path('section_moteur',{'cat':'section_moteur'})}}" class="text-white"><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                            </div>
+						</div>
+					</div>
+                    <hr class="my-5">
+                    <h2>Les dernières infos</h2>
+					{% for a in side_actu %}
+						<a href="{{path('actu_show', {'slug': a.slug})}}">
+                    		<div class="row mt-5">
+                    		    <div class="col-lg-4">
+                    		    	<img src="{{asset('images/actu/' ~ a.images.first.src)}}" alt="" class="imgHome3">
+                    		    </div>
+                    		    <div class="col-lg-8">
+                    		        <p>{{a.content|slice(0,100)}}...</p>
+                    		    </div>
+                    		</div>
+						</a>
+                    	<hr>
+					{% endfor %}
+                    <a href="{{path('actu')}}" class="btn btn-primary mt-4">Toutes les actus !</a>
+                    <hr class="my-5">
+                    <div class="card p-1 blue text-center">
+						<div class="card-body">
+							<h4 class="card-title">Contact</h4>
+							<div class="row">
+                                <div class="col-lg-10">
+                                    <ul>
+                                        <li>Aéroclub de Sologne</li>
+                                        <li>Tel: 02 54 96 35 07</li>
+                                        <li>Fax: 02 54 96 58 01</li>
+                                        <li>Adresse: Le Bois Ribault
+                                        41130 Gièvres - Loir-et-Cher</li>
+                                    </ul>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+{% endblock %}

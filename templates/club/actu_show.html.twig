@@ -1,0 +1,59 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9 pr-3">
+            <h1 class="text-center py-5">{{actu.title}}</h1>
+            <div id="carouselExampleIndicators" class="carousel slide my-5 pl-4" data-ride="carousel">
+                <ol class="carousel-indicators">
+                {% for image in actu.images %}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{loop.index0}}" {% if loop.first %}class="active" {% endif %}></li>
+                {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for image in actu.images %}
+                        <div class="carousel-item {% if loop.first %}active {% endif %}">
+                            <img src="{{asset('images/actu/' ~ image.src)}}" class="d-block w-100" alt="image-actu">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ actu.title }}</h5>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <p class="pl-3">{{actu.content}}</p>
+            <div class="text-center">
+                <small>Posté le: {{actu.createdAt|date("d/m/Y")}}</small>
+            </div>
+            {% for a in other_actu %}
+            <div class="row p-3 mt-5">
+                <div class="col-lg-4 text-center">
+                    <img src="{{asset('images/actu/' ~ a.images.first.src)}}" alt="image-actu" class="img-fluid mt-2 imgActuShow">
+                </div>   
+                <div class="col-lg-8">
+                    <h2>{{a.title}}</h2>
+                    <p>
+                        {{a.content|slice(0,200)}}...
+                    </p>
+                    <a href="{{path('actu_show', {'slug': a.slug})}}"><i class="fas fa-book-open btn btn-primary mr-2"></i></a>
+                    <div class="mt-2">
+                        <small>Posté le: {{a.createdAt|date("d/m/Y")}}</small>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

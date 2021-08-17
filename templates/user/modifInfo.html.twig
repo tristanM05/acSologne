@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier mes informations{% endblock %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Modifier mes informations</h1>
+            <hr id="hrModif">
+            {% for message in app.flashes('success') %}
+                <div class="container alert alert-success text-center" id="alertInfo">
+                    {{message}}
+                </div>
+            {% endfor %}
+            <div class="conatiner" id="formInfo">
+                <div class="my-5">
+                    <h2>Modifier mon email:</h2>
+                    {{ form_start(form_info) }}
+                    {{ form_widget(form_info) }}
+                    <input type="submit" class="btn btn-primary mt-2" value="Valider">
+                    {{ form_end(form_info) }}
+                </div>
+                <div>
+                    <h2>Modifier mon mot de passe:</h2>
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    <input type="submit" class="btn btn-primary mt-2" value="Valider">
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

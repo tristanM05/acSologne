@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}connexion{% endblock %}
+
+
+{% block body %}
+<div class="wrapper container text-center">
+<h1 class="text-uppercase py-5">Connexion a votre espace membre</h1>
+    {% if erreur %}
+        <div class="alert alert-danger">
+            <p>Une erreur est survenue, le nom d'utilisateur ou le mot de passe est incorrect</p>
+        </div>
+    {% endif %}
+    <div class="row col justify-content-center py-5">
+        <form method="post">
+            <div class="form-group">
+                <label for="email">Identifiant</label>
+                <input type="text" class="form-control" name="_username" id="email" required value="{{identifiant}}">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" name="_password" id="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success form-control">Connexion</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

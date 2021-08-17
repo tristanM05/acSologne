@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les formations{% endblock %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            {% if category.libelle != 'moteur' %}
+            <h1 class="text-center py-5">Devenez vélivole</h1>
+            <div class="pl-4 pb-5">
+                <p id="pFormation">A la différence de l'avion, le pilote de planeur ou vélivole doit chercher les
+                    ascendances afin de rester en l'air. A Romorantin, nous pratiquons ce que l'on appelle le vol
+                    thermique. Le soleil chauffe le sol, ce qui créé des colonnes d'air chaud dans lesquelles le planeur
+                    spirale pour monter. La formation se déroule en plusieurs étapes : le brevet de pilote de planeur,
+                    l'autorisation de vol sur la campagne puis vient les badges et les qualifications particulières
+                    (emport passager, ...).</p>
+            </div>
+            {% else %}
+            <h1 class="text-center py-5">Devenez pilote d'avion ou d'ULM</h1>
+            <div class="pl-4 pb-5">
+                <p id="pFormation">Nul besoin d'avoir 10/10 aux deux yeux ou d'avoir fait math'sup pour prendre les
+                    commandes d'un avion ou d'un ULM. Suivez nos formations encadrées par des pilotes professionnels et
+                    emmenez votre famille ou amis passer la journée aux Sables d'Olonnes après une heure de vol au
+                    départ de Romorantin.</p>
+            </div>
+            {% endif %}
+            {% for f in category.formations %}
+            <div class="row p-3 mt-5">
+                <div class="col-lg-4">
+                    <img src="{{asset('images/formation/' ~ f.images.first.src)}}" alt="image-formation"
+                        class="img-fluid mt-2 imgActu">
+                </div>
+                <div class="col-lg-8 p-0">
+                    <h2>{{f.title}}</h2>
+                    <p>
+                        Toutes les informations !
+                    </p>
+                    {% if category != 'moteur' %}
+                        <a href="{{path('formation_detail', {'cat':'planeur','slug': f.slug})}}"><i class="fas fa-book-open btn btn-primary mr-2"></i></a>
+                    {% else %}
+                        <a href="{{path('formation_detail', {'cat':'moteur','slug': f.slug})}}"><i class="fas fa-book-open btn btn-primary mr-2"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+            <hr class="hrVol my-5">
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

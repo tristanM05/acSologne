@@ -1,0 +1,52 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Commentaires{% endblock %}
+
+{% block monTitre %}Gestion des commentaires{% endblock %}
+
+{% block body %}
+{% for message in app.flashes('success') %}
+    <div class="container alert alert-success text-center">
+        {{message}}
+    </div>
+{% endfor %}
+<table class="table table-hover text-center">
+    <tr class="table-primary">
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>Email</td>
+        <td>Date de création</td>
+        <td>Contenu</td>
+        <td>Actions</td>
+    </tr>
+    {% for c in comment %}
+        <tr>
+            <td><strong>{{c.lastname}}</strong></td>
+            <td><strong>{{c.firstname}}</strong></td>
+            <td>{{c.email}}</td>
+            <td>{{c.createdAt|date("d/m/Y")}}</td>
+            {% if c.content | length >=   100 %}
+                    <td>{{c.content | slice(0, 100)}}... <a href="{{path('comment_show',{'id': c.id})}}">Voir plus</a> </td>
+                {% else %}
+                    <td>{{c.content}}</td>
+                {% endif %}
+            <td>
+                {% if c.status != 1 %}
+                    <form method="POST" style="display:inline-block" action="{{path('validComment',{'id':c.id})}}" onsubmit="return confirm ('Confirmer la validation du commentaire')">
+                        <input type="hidden" name="_method" value="valid">
+                        <input type="hidden" name="_token" value="{{csrf_token('VAL' ~ c.id)}}">
+                        <input type="submit" class="btn btn-secondary" value="valider">
+                    </form>
+                {% else %}
+                    <a href="{{path('comment_show',{'id': c.id})}}" class="btn btn-success">afficher</a>
+                {% endif %}
+                <form method="POST" style="display:inline-block" action="{{path('supComment',{'id':c.id})}}" onsubmit="return confirm('Confirmer la suppression')">
+                <input type="hidden" name="_method" value="delete">
+                <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ c.id)}}">
+                <input type="submit" class="btn btn-danger" value="supprimer">
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

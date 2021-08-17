@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5 text-center">Nous contacter</h1>
+            <hr id="hrContact">
+            {% for message in app.flashes('success') %}
+                <div class="container alert alert-success">
+                    {{message}}
+                </div>
+            {% endfor %}
+            <div id="contactForm" class="container pl-5">
+                {{form_start(form)}}
+                    <div class="row">
+                        <div class="col">{{form_row(form.firstname)}}</div>
+                        <div class="col">{{form_row(form.lastname)}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">{{form_row(form.phone)}}</div>
+                        <div class="col">{{form_row(form.email)}}</div>
+                    </div>
+                    {{form_widget(form)}}
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block mt-4" id="btnContact">Envoyer</button>
+                    </div>
+                {{form_end(form)}}
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

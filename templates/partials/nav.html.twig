@@ -1,0 +1,88 @@
+<div class="container p-0">
+	<nav class="navbar navbar-expand-lg ">
+		<a class="navbar-brand" href="{{path('homepage')}}"><img src="/images/logo.png" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{{path('homepage')}}">Acceuil
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Le club
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="{{path('actu')}}">Actualités</a>
+						<a class="dropdown-item" href="{{path('decouvrir_le_vol')}}">Découvir le vol</a>
+						<a class="dropdown-item" href="{{path('infrastructure')}}">Les infrastructure</a>
+						<a class="dropdown-item" href="{{path('allFormation')}}">Les formations</a>
+						<a class="dropdown-item" href="{{path('bia')}}">BIA</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Avions et ULM
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="{{path('section_moteur',{'cat':'moteur'})}}">La section</a>
+						<a class="dropdown-item" href="{{path('formation',{'cat':'moteur'})}}">Formation</a>
+						<a class="dropdown-item" href="{{ path('pdf_view',{'cat':'moteur'}) }}" target="blank">Tarifs Avion/ULM</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Planeur
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					    <a class="dropdown-item" href="{{path('section_moteur',{'cat':'planeur'})}}">La section</a>
+						<a class="dropdown-item" href="{{path('formation',{'cat':'planeur'})}}">Formation</a>
+						<a class="dropdown-item" href="{{ path('pdf_view',{'cat':'planeur'}) }}" target="blank">Tarifs Planeurs</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Annonces
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					    <a class="dropdown-item" href="{{path('annonce')}}">Toute nos annonces</a>
+						<a class="dropdown-item" href="{{path('annonce_cat',{'cat':'equipements'})}}">Equipements</a>
+						<a class="dropdown-item" href="{{path('annonce_cat',{'cat':'appareils'})}}">Appareils</a>
+						<a class="dropdown-item" href="{{path('annonce_cat',{'cat':'divers'})}}">Divers</a>
+					</div>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="{{path('galerie')}}">Galerie</a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="{{path('comment')}}">Livre d'or</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('contact')}}">Contact</a>
+				</li>
+				{% if app.user %}
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle btn btn-success ml-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{{app.user.fullName}}
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="{{path('user_info')}}">Modifier mes infos</a>
+						<a class="dropdown-item" href="{{path('userAnnonce')}}">Mes annonces</a>
+					    <a class="dropdown-item" id="decoUser" href="{{path('user_logout')}}">Deconnexion</a>
+					</div>
+				</li>
+				{% else %}
+					<li class="nav-item">
+                	    <a class="btn btn-success ml-4" href="{{path('user_log')}}">Espace Membres</a>
+                	</li>
+				{% endif %}
+				
+				
+			</ul>
+		</div>
+	</nav>
+</div>

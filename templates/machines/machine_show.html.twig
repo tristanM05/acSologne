@@ -1,0 +1,58 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row pl-4">
+        <div class="col-lg-9 pr-3">
+            <h1 class="text-center py-5">{{machine.nom}}</h1>
+            <hr class="hrVol pb-5">
+            <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                {% for image in machine.images %}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{loop.index0}}" {% if loop.first %}class="active" {% endif %}></li>
+                {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for image in machine.images %}
+                        <div class="carousel-item {% if loop.first %}active {% endif %}">
+                            <img src="{{asset('images/machines/' ~ image.src)}}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ machine.nom }}</h5>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3 class="text-center mb-4"><strong>Description:</strong></h3>
+            <p id="pShowMachine">{{machine.description}}</p>
+            <div class="container mt-5 cardMachine">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <strong id="titleCard">Caractéristiques</strong>
+                    </div>
+                    <div class="card-body">
+                        <ul id="ulMachine">
+                            <li><strong>Immatriculation:</strong> {{machine.immatriculation}}</li>
+                            <li><strong>Model moteur</strong>: {{machine.moteur}}</li>
+                            <li><strong>Puissance moteur:</strong> {{machine.pMoteur}} CV</li>
+                            <li><strong>Envergure:</strong> {{machine.envergure}} mètres</li>
+                            <li><strong>Places:</strong> {{machine.nbPlace}}</li>
+                            <li><strong>Vitesse:</strong> {{machine.vitesse}} km/h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block title %}commentaire{% endblock %}
+{% block monTitre %}commentaire de {{comment.firstname}} {{comment.lastname}}{% endblock %}
+{% block body %} 
+    <div class="container">
+        <p>{{comment.content}}</p>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block title %}Formation{% endblock %}
+{% block monTitre %}
+    {% if edit %}
+        Modifier la formation {{formation.title}}
+    {% else %}
+        Ajouter une formation
+    {% endif %}
+{% endblock %}
+{% block body %}
+{% if edit %}
+{% set pathx = 'modifFormation' %}
+{% else %}
+{% set pathx = 'createFormation' %}
+{% endif %}
+<form action="{{ path(pathx,{'id':formation.id}) }}" name="formation" method="post" enctype="multipart/form-data">
+
+    <div class="container">
+        {{form_row(form.title)}}
+        {{form_row(form.content)}}
+            <div class="form-group">
+                <label for="file">Ajouter une ou plusieurs images:</label>
+                <input type="file" multiple class="form-control p-1" name="photos[]" id="photos">
+            </div>
+        {{form_row(form.categories)}}
+        <input type="submit" class="btn btn-primary mb-4" value="Valider">
+        <p>Les images:</p>
+        <div class="row">
+            {% for f in formation.images %}
+                <div class="col-lg-4">
+                    <img src="{{asset('images/formation/' ~ f.src)}}" alt="" class="adminImg">
+                    <div class="supImg">
+                        <i class="fas fa-times fa-2x p-1 ml-2"></i>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {{form_end(form)}}
+    </script>
+    {% endblock %}
+

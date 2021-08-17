@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row pl-4">
+        <div class="col-lg-9 pr-3">
+            <h1 class="text-center py-5">{{album.titre}}</h1>
+            <p id="pAlbum">{{album.description}}</p>
+            <small>Posté le: {{album.createdAt|date("d/m/Y")}}</small>
+            <hr class="mt-5">
+            <div class="row">
+            {% for image in album.images %}
+                <div class="col-lg-4 p-0 pl-2">
+                    <a href="{{image.src}}" data-lightbox="galerie"><img src="{{asset('images/album/' ~ image.src)}}" alt="{{image.src}}" class="imgAlbum"></a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

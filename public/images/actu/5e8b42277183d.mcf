@@ -1,0 +1,887 @@
+<fotobook productname="ALB15" externalProjectId="" compatibilityVersion="6002002" productvariant_visiblename="" version="3.0" isDataMcf="0" createdWithHPSVersionBuild="20180613" productparameter="" pagenaming="1" programversionBuild="20180613" projectIDCreatedEpoch="1531410199" imagedir="livre viet nam_mcf-Dateien" savetime="2018-07-12 19:26" startdatecalendarium="" programversion="6003005" projectID="7ada6495-1c63-41ff-a7f2-3d36da90d3c3" normalpages="26" identifier="223730d4-0a4c-48bb-9ba1-05ac9a4330c6" createdWithHPSVersion="6003005" totalpages="31" productvariant="pages:26" useSpineLogo="1">
+ <pagenumbering format="0" fontfamily="Calibri" fontbold="0" margin="110" textstring="%" position="0" textcolor="#ff000000" bgcolor="#00000000" verticalMargin="50" fontitalics="0" fontsize="24">
+  <outline enabled="0" width="1"/>
+ </pagenumbering>
+ <extra>
+  <lastTextFormat hasOutline="0" VerticalIndentMargin="0" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+ </extra>
+ <page designStyleID="-1" pagenr="0" type="fullcover" rotation="0">
+  <bundlesize width="4275" height="2750"/>
+  <designElementIDs layout="82069" background="201"/>
+  <background alignment="4" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="fullcoverpage_portrait,normal" layout="1"/>
+  <area left="1037" alpha="1" zposition="1" isResizable="0" top="1107" width="2200" rotation="90" areatype="textarea" height="85">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="1" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Calibri'; font-size:11pt; font-weight:400; font-style:normal;"><table style="-qt-table-type: root; margin-top:19px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:6pt; color:#000000;">                                                                                                                                                                                           </span><span style=" color:#000000;">Viêt Nam - Mars 2018</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="0" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="Calibri,11,-1,5,50,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="-100" alpha="1" zposition="100" isResizable="1" top="-100" width="2195" rotation="0" areatype="imagearea" height="2950">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-899" scale="0.983333" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020856.jpeg">
+    <relationships>
+     <relationship child="P1020856.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/ninh binh/P1020856.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2180" alpha="1" zposition="101" isResizable="1" top="-100" width="2195" rotation="0" areatype="imagearea" height="2950">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-22" scale="0.731647" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1879.jpeg">
+    <relationships>
+     <relationship child="IMG_1879.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1879.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2081" alpha="1" zposition="999" isResizable="0" top="2623" width="110" rotation="270" areatype="spinelogoarea" height="42">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+  </area>
+  <area left="2667.478468899521" alpha="1" zposition="1000" isResizable="1" top="162" width="1250.950835474329" rotation="0" areatype="textarea" height="305.1092393860361">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Calibri'; font-size:48pt; font-weight:400; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'TiogaScript'; font-size:72pt; font-weight:600; color:#000000;">Viêt Nam</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="Calibri,48,-1,5,50,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="0" type="spine" rotation="0">
+  <bundlesize width="4275" height="2750"/>
+  <designElementIDs background="201"/>
+  <background alignment="4" templatename="Weiss,normal," type="1" rotation="0"/>
+ </page>
+ <page designStyleID="-1" pagenr="0" type="fullcover" rotation="0">
+  <bundlesize width="4275" height="2750"/>
+  <designElementIDs layout="82075" background="201"/>
+  <background alignment="4" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="fullcoverpage_with_text_portrait,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="0" type="emptypage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <area left="2168" alpha="1" zposition="100" isResizable="1" top="101" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020496.jpeg">
+    <relationships>
+     <relationship child="P1020496.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020496.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="101" isResizable="1" top="1390" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-205" useABK="1" safeContainerLocation="persistent" filename="P1020534.jpeg">
+    <relationships>
+     <relationship child="P1020534.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020534.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2941.79344836209" alpha="1" zposition="1000" isResizable="1" top="1296.579144786196" width="162.5406351587899" rotation="0" areatype="textarea" height="93.46086521630423">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Calibri'; font-size:16pt; font-weight:400; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Hanoï</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="Calibri,16,-1,5,50,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="1" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_002,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="2" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125060" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="2.3.1 DIN A4_x,normal" layout="1"/>
+  <area left="410.0000000000002" alpha="1" zposition="104" isResizable="1" top="1300" width="1530" rotation="0" areatype="imagearea" height="1290">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-221" scale="0.43" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020510.jpeg">
+    <relationships>
+     <relationship child="P1020510.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020510.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="105" isResizable="1" top="110.0000000000001" width="1530" rotation="0" areatype="imagearea" height="1290">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-221" scale="0.43" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020500.jpeg">
+    <relationships>
+     <relationship child="P1020500.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020500.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3230" alpha="1" zposition="109" isResizable="1" top="1981.70135112077" width="730.2579631845765" rotation="0" areatype="imagearea" height="640.2986488792303">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-293" scale="0.211739" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1414.jpeg">
+    <relationships>
+     <relationship child="IMG_1414.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1414.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2356.093273318329" alpha="1" zposition="110" isResizable="1" top="1990" width="792.3855963991" rotation="0" areatype="imagearea" height="605">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-1062" scale="0.270253" top="-762" useABK="1" safeContainerLocation="persistent" filename="P1020514.jpeg">
+    <relationships>
+     <relationship child="P1020514.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020514.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2353.375" alpha="1" zposition="111" isResizable="1" top="73" width="1391.25" rotation="0" areatype="imagearea" height="1855">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="1.28819" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1363-rotate-rotate-rotate.jpeg">
+    <relationships>
+     <relationship child="IMG_1363-rotate-rotate-rotate.jpeg" parent="IMG_1363-rotate-rotate-rotate.jpeg" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+     <relationship child="IMG_1363-rotate-rotate-rotate.jpeg" parent="cewe:effect=rotate,angle=270/cewe:effect=rotate,angle=270/cewe:effect=rotate,angle=270/file:///C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+     <relationship child="cewe:effect=rotate,angle=270/cewe:effect=rotate,angle=270/cewe:effect=rotate,angle=270/file:///C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" parent="cewe:effect=rotate,angle=270/cewe:effect=rotate,angle=270/file:///C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" nature="RELATIONSHIP_MODIFIED_COPY"/>
+     <relationship child="cewe:effect=rotate,angle=270/cewe:effect=rotate,angle=270/file:///C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" parent="cewe:effect=rotate,angle=270/file:///C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" nature="RELATIONSHIP_MODIFIED_COPY"/>
+     <relationship child="cewe:effect=rotate,angle=270/file:///C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1363.MOV" nature="RELATIONSHIP_MODIFIED_COPY"/>
+    </relationships>
+    <frames frameNumbers="0" decoration="1" IsHorizontal="1" frameRotation="0"/>
+   </image>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="3" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125035" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="raster_portrait_left_lateral_gutter_large_000290,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="4" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_013,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="116" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-201" useABK="1" safeContainerLocation="persistent" filename="P1020531.jpeg">
+    <relationships>
+     <relationship child="P1020531.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020531.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="117" isResizable="1" top="963" width="1830" rotation="0" areatype="imagearea" height="1628">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-313" scale="0.542667" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020528.jpeg">
+    <relationships>
+     <relationship child="P1020528.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020528.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2147" alpha="1" zposition="118" isResizable="1" top="1866" width="968" rotation="0" areatype="imagearea" height="724">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.242" top="-4" useABK="1" safeContainerLocation="persistent" filename="P1020494.jpeg">
+    <relationships>
+     <relationship child="P1020494.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020494.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3034" alpha="1" zposition="119" isResizable="1" top="1546" width="956" rotation="0" areatype="imagearea" height="726">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.75625" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1380-remove-redeye.jpeg">
+    <relationships>
+     <relationship child="IMG_1380-remove-redeye.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/IMG_1380.JPG" nature="RELATIONSHIP_MODIFIED_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2148" alpha="1" zposition="120" isResizable="1" top="109.0000000000001" width="1842" rotation="0" areatype="imagearea" height="1362">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4605" top="-22" useABK="1" safeContainerLocation="persistent" filename="P1020509.jpeg">
+    <relationships>
+     <relationship child="P1020509.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/hanoi/P1020509.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="5" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125060" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.6.2 DIN A4_x, y,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="6" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125816" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="2014_02_25T07_20_51_y,normal" layout="1"/>
+  <area left="739.9999999999998" alpha="1" zposition="130" isResizable="1" top="110" width="1200" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-504" scale="0.396825" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1471.jpeg">
+    <relationships>
+     <relationship child="IMG_1471.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/IMG_1471.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110.0000000000001" alpha="1" zposition="131" isResizable="1" top="1390" width="1200" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-273" scale="1.25" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1475-remove-redeye.jpeg">
+    <relationships>
+     <relationship child="IMG_1475-remove-redeye.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/IMG_1475.JPG" nature="RELATIONSHIP_MODIFIED_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="132" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-894" useABK="1" safeContainerLocation="persistent" filename="P1020537.jpeg">
+    <relationships>
+     <relationship child="P1020537.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/sapa/P1020537.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="133" isResizable="1" top="963" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020539.jpeg">
+    <relationships>
+     <relationship child="P1020539.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/sapa/P1020539.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3115" alpha="1" zposition="134" isResizable="1" top="963" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020549.jpeg">
+    <relationships>
+     <relationship child="P1020549.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/sapa/P1020549.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="135" isResizable="1" top="1796.074018504626" width="1830" rotation="0" areatype="imagearea" height="794.9259814953739">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-815" useABK="1" safeContainerLocation="persistent" filename="P1020542.jpeg">
+    <relationships>
+     <relationship child="P1020542.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/sapa/P1020542.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="1390" alpha="1" zposition="1002" isResizable="1" top="1390" width="550" rotation="0" areatype="textarea" height="1200">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Direction la vallée de Sapa</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="109.9999999999999" alpha="1" zposition="1003" isResizable="1" top="110" width="550" rotation="0" areatype="textarea" height="1200">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Un nouveau compagnon de route</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="7" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_011,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="8" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125815" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.9 DIN A4_y,normal" layout="1"/>
+  <area left="412" alpha="1" zposition="104" isResizable="1" top="109.9999999999999" width="1528" rotation="0" areatype="imagearea" height="1018">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.382" top="-168" useABK="1" safeContainerLocation="persistent" filename="P1020543.jpeg">
+    <relationships>
+     <relationship child="P1020543.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/sapa/P1020543.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="52.82570642660664" alpha="1" zposition="105" isResizable="1" top="963" width="1091.174293573393" rotation="0" areatype="imagearea" height="808.6929232308075">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.270629" top="-18" useABK="1" safeContainerLocation="persistent" filename="IMG_1854.jpeg">
+    <relationships>
+     <relationship child="IMG_1854.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1854.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="906" alpha="1" zposition="106" isResizable="1" top="1817" width="1034" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.256448" top="-4" useABK="1" safeContainerLocation="persistent" filename="IMG_1847.jpeg">
+    <relationships>
+     <relationship child="IMG_1847.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1847.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="114" isResizable="1" top="1572" width="1528" rotation="0" areatype="imagearea" height="1018">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="1.59167" top="-40" useABK="1" safeContainerLocation="persistent" filename="29026306_10215586667321229_3322042342524186569_n.jpeg">
+    <relationships>
+     <relationship child="29026306_10215586667321229_3322042342524186569_n.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/29026306_10215586667321229_3322042342524186569_n.jpg" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2956" alpha="1" zposition="115" isResizable="1" top="963" width="1034" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="1.43611" top="-210" useABK="1" safeContainerLocation="persistent" filename="29025362_10215586666841217_2784140492978736801_n.jpeg">
+    <relationships>
+     <relationship child="29025362_10215586666841217_2784140492978736801_n.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/29025362_10215586666841217_2784140492978736801_n.jpg" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="116" isResizable="1" top="108.9999999999999" width="1034" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="1.07708" top="-1" useABK="1" safeContainerLocation="persistent" filename="28871149_2105278756368337_379434311624949760_n.jpeg">
+    <relationships>
+     <relationship child="28871149_2105278756368337_379434311624949760_n.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/28871149_2105278756368337_379434311624949760_n.jpg" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110.0000000000001" alpha="1" zposition="1000" isResizable="1" top="1817" width="716" rotation="0" areatype="textarea" height="774">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Rencontre de Mama tsu de la tribu des Hmong, elle nous enmène chez elle..</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="1224" alpha="1" zposition="1001" isResizable="1" top="1207" width="716" rotation="0" areatype="textarea" height="530">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Une petite bière dans les nuages</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="3274" alpha="1" zposition="1006" isResizable="1" top="108.9999999999999" width="716" rotation="0" areatype="textarea" height="774">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Une journée de marche pour atteindre son village</span></p></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="2160" alpha="1" zposition="1007" isResizable="1" top="963" width="716" rotation="0" areatype="textarea" height="530">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Avec nos nouveau amis Québécois</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="9" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125815" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.9 DIN A4_x,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="10" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_011,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="119" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-654" useABK="1" safeContainerLocation="persistent" filename="P1020567.jpeg">
+    <relationships>
+     <relationship child="P1020567.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020567.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="120" isResizable="1" top="963" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020597.jpeg">
+    <relationships>
+     <relationship child="P1020597.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020597.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="1065" alpha="1" zposition="121" isResizable="1" top="963" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020578.jpeg">
+    <relationships>
+     <relationship child="P1020578.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020578.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="122" isResizable="1" top="1817" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-654" useABK="1" safeContainerLocation="persistent" filename="P1020614.jpeg">
+    <relationships>
+     <relationship child="P1020614.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020614.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="123" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-754" useABK="1" safeContainerLocation="persistent" filename="P1020610.jpeg">
+    <relationships>
+     <relationship child="P1020610.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020610.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="124" isResizable="1" top="962.9999999999999" width="898.3302593965273" rotation="0" areatype="imagearea" height="793.7301606996713">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-317" scale="0.264577" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020615.jpeg">
+    <relationships>
+     <relationship child="P1020615.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020615.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3087.799504589376" alpha="1" zposition="125" isResizable="1" top="962.9999999999999" width="903.2004954106251" rotation="0" areatype="imagearea" height="798.0333144381543">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-89" scale="1.15509" top="-15" useABK="1" safeContainerLocation="persistent" filename="28783107_10215568230340316_5575320216932288727_n.jpeg">
+    <relationships>
+     <relationship child="28783107_10215568230340316_5575320216932288727_n.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/28783107_10215568230340316_5575320216932288727_n.jpg" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="126" isResizable="1" top="1817" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-654" useABK="1" safeContainerLocation="persistent" filename="P1020607.jpeg">
+    <relationships>
+     <relationship child="P1020607.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020607.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="11" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_011,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="12" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125035" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="raster_portrait_left_lateral_gutter_large_000925_x-axis,normal" layout="1"/>
+  <area left="101.3440860215055" alpha="1" zposition="149" isResizable="1" top="86" width="1813.709677419355" rotation="0" areatype="imagearea" height="813">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.453427" top="-895" useABK="1" safeContainerLocation="persistent" filename="P1020630.jpeg">
+    <relationships>
+     <relationship child="P1020630.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020630.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="1236" alpha="1" zposition="150" isResizable="1" top="940" width="690" rotation="0" areatype="imagearea" height="815">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-769" scale="0.271667" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020623.jpeg">
+    <relationships>
+     <relationship child="P1020623.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020623.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="100" alpha="1" zposition="151" isResizable="1" top="943" width="1102.150537634409" rotation="0" areatype="imagearea" height="815">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.275538" top="-33" useABK="1" safeContainerLocation="persistent" filename="P1020631.jpeg">
+    <relationships>
+     <relationship child="P1020631.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020631.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="1237" alpha="1" zposition="152" isResizable="1" top="1782.258064516129" width="692.0322580645161" rotation="0" areatype="imagearea" height="793.2795698924729">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-692" scale="0.264427" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020622.jpeg">
+    <relationships>
+     <relationship child="P1020622.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020622.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="100.0000000000001" alpha="1" zposition="153" isResizable="1" top="1778" width="1109.139784946237" rotation="0" areatype="imagearea" height="812">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.277285" top="-36" useABK="1" safeContainerLocation="persistent" filename="P1020627.jpeg">
+    <relationships>
+     <relationship child="P1020627.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020627.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="154" isResizable="1" top="1020.430107526882" width="876" rotation="0" areatype="imagearea" height="1569.569892473118">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-1028" scale="0.52319" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020637.jpeg">
+    <relationships>
+     <relationship child="P1020637.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020637.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3050.806451612903" alpha="1" zposition="155" isResizable="1" top="1816" width="940.1935483870966" rotation="0" areatype="imagearea" height="790.989247311828">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-417" scale="0.263663" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020647.jpeg">
+    <relationships>
+     <relationship child="P1020647.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020647.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3052.840644036244" alpha="1" zposition="156" isResizable="1" top="1020.430107526882" width="938.1593559637566" rotation="0" areatype="imagearea" height="767.416379937898">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-168" scale="0.255805" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020639.jpeg">
+    <relationships>
+     <relationship child="P1020639.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020639.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2152" alpha="1" zposition="157" isResizable="1" top="109.9999999999999" width="1850" rotation="0" areatype="imagearea" height="875.483870967742">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.458829" top="-1109" useABK="1" safeContainerLocation="persistent" filename="IMG_1782.jpeg">
+    <relationships>
+     <relationship child="IMG_1782.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1782.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="13" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="4.20 DIN A4_x,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="14" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125815" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.9 DIN A4_x,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="111" isResizable="1" top="1572" width="1528" rotation="0" areatype="imagearea" height="1018">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.382" top="-8" useABK="1" safeContainerLocation="persistent" filename="P1020642.jpeg">
+    <relationships>
+     <relationship child="P1020642.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020642.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="906" alpha="1" zposition="112" isResizable="1" top="963" width="1034" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.2585" top="-4" useABK="1" safeContainerLocation="persistent" filename="P1020645.jpeg">
+    <relationships>
+     <relationship child="P1020645.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020645.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="113" isResizable="1" top="108.9999999999999" width="1034" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.2585" top="-4" useABK="1" safeContainerLocation="persistent" filename="P1020644.jpeg">
+    <relationships>
+     <relationship child="P1020644.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020644.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2147" alpha="1" zposition="144" isResizable="1" top="1501.918757467145" width="856.8375149342892" rotation="0" areatype="imagearea" height="1088.081242532855">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-241" scale="0.320106" top="-400" useABK="1" safeContainerLocation="persistent" filename="IMG_1731.jpeg">
+    <relationships>
+     <relationship child="IMG_1731.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1731.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3026.653212371159" alpha="1" zposition="145" isResizable="1" top="1687.376344086021" width="984.3467876288414" rotation="0" areatype="imagearea" height="899.0633213859021">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-420" scale="0.297309" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1745-remove-redeye.jpeg">
+    <relationships>
+     <relationship child="IMG_1745-remove-redeye.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1745.JPG" nature="RELATIONSHIP_MODIFIED_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2148" alpha="1" zposition="146" isResizable="1" top="109.0000000000001" width="1842" rotation="0" areatype="imagearea" height="1362">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.456845" top="-28" useABK="1" safeContainerLocation="persistent" filename="IMG_1718.jpeg">
+    <relationships>
+     <relationship child="IMG_1718.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1718.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="1224" alpha="1" zposition="1003" isResizable="1" top="108.9999999999999" width="716" rotation="0" areatype="textarea" height="774">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Arrivé a la maison de Mama tsu</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="109.9999999999999" alpha="1" zposition="1004" isResizable="1" top="963" width="716" rotation="0" areatype="textarea" height="530">
+   <border color="#ff000000" position="outside" width="0" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;"><br /></p><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Et déjà au travail</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+  <area left="3089.457586618877" alpha="1" zposition="1005" isResizable="1" top="1509.05376344086" width="845.4982078853045" rotation="0" areatype="textarea" height="270">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">Une soirée magique</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="15" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125060" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.6.2 DIN A4_x, y,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="16" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125060" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.6.2 DIN A4,normal" layout="1"/>
+  <area left="985" alpha="1" zposition="104" isResizable="1" top="110" width="968" rotation="0" areatype="imagearea" height="724">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.240079" top="-4" useABK="1" safeContainerLocation="persistent" filename="IMG_1717.jpeg">
+    <relationships>
+     <relationship child="IMG_1717.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1717.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110.0000000000001" alpha="1" zposition="105" isResizable="1" top="428" width="956" rotation="0" areatype="imagearea" height="726">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-8" scale="0.75625" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1733-remove-redeye.jpeg">
+    <relationships>
+     <relationship child="IMG_1733-remove-redeye.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1733.JPG" nature="RELATIONSHIP_MODIFIED_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="106" isResizable="1" top="1229" width="1842" rotation="0" areatype="imagearea" height="1362">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.456845" top="0" useABK="1" safeContainerLocation="persistent" filename="100ezscu_1_IMG_1741-remove-redeye.jpeg">
+    <relationships>
+     <relationship child="100ezscu_1_IMG_1741-remove-redeye.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1741.JPG" nature="RELATIONSHIP_MODIFIED_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2776" alpha="1" zposition="123" isResizable="1" top="1597" width="1214" rotation="0" areatype="imagearea" height="553">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.3035" top="-244" useABK="1" safeContainerLocation="persistent" filename="P1020691.jpeg">
+    <relationships>
+     <relationship child="P1020691.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020691.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="124" isResizable="1" top="1597" width="596" rotation="0" areatype="imagearea" height="553">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-385" scale="0.184333" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020699.jpeg">
+    <relationships>
+     <relationship child="P1020699.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020699.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2776" alpha="1" zposition="125" isResizable="1" top="450" width="1214" rotation="0" areatype="imagearea" height="1127">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-383" scale="0.375667" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020669.jpeg">
+    <relationships>
+     <relationship child="P1020669.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020669.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="126" isResizable="1" top="1023" width="596" rotation="0" areatype="imagearea" height="554">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-384" scale="0.184667" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020697.jpeg">
+    <relationships>
+     <relationship child="P1020697.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020697.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="127" isResizable="1" top="450" width="596" rotation="0" areatype="imagearea" height="553">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-385" scale="0.184333" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020695.jpeg">
+    <relationships>
+     <relationship child="P1020695.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/trk mama su/P1020695.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="17" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125043" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="raster_portrait_middle_large_000900,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="18" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_012,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="108" isResizable="1" top="110" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020716.jpeg">
+    <relationships>
+     <relationship child="P1020716.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020716.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="1065" alpha="1" zposition="109" isResizable="1" top="110" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020720.jpeg">
+    <relationships>
+     <relationship child="P1020720.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020720.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="103" alpha="1" zposition="110" isResizable="1" top="1019" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-654" useABK="1" safeContainerLocation="persistent" filename="P1020718.jpeg">
+    <relationships>
+     <relationship child="P1020718.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020718.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="110" alpha="1" zposition="111" isResizable="1" top="1817" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-1104" useABK="1" safeContainerLocation="persistent" filename="P1020747.jpeg">
+    <relationships>
+     <relationship child="P1020747.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020747.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="112" isResizable="1" top="1816" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020745.jpeg">
+    <relationships>
+     <relationship child="P1020745.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020745.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3115" alpha="1" zposition="113" isResizable="1" top="1816" width="876" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-302" scale="0.258" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020749.jpeg">
+    <relationships>
+     <relationship child="P1020749.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020749.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="114" isResizable="1" top="963" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-654" useABK="1" safeContainerLocation="persistent" filename="P1020722.jpeg">
+    <relationships>
+     <relationship child="P1020722.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020722.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="115" isResizable="1" top="108.9999999999999" width="1830" rotation="0" areatype="imagearea" height="774">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-852" useABK="1" safeContainerLocation="persistent" filename="P1020742.jpeg">
+    <relationships>
+     <relationship child="P1020742.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020742.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="527.6881720430108" alpha="1" zposition="1000" isResizable="1" top="898.1182795698925" width="1261.559139784946" rotation="0" areatype="textarea" height="270">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <text areaTextType="content" isSpineText="0" applySpotColor="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'TiogaScript'; font-size:24pt; font-weight:600; font-style:normal;"><table style="-qt-table-type: root; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><tr><td style="border: none;"><p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000000;">La baie de Halong</span></p></td></tr></table></body></html>]]><outline color="#ff000000" enabled="0" width="1"/>
+    <textFormat hasOutline="0" VerticalIndentMargin="50" foregroundColor="#ff000000" Alignment="ALIGNLEFT" backgroundColor="#00000000" font="TiogaScript,24,-1,5,75,0,0,0,0,0" IndentMargin="0"/>
+   </text>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="19" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_012_x,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="20" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="33543" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="3.5 DIN A4,normal" layout="1"/>
+  <area left="1293" alpha="1" zposition="104" isResizable="1" top="180" width="600" rotation="351" areatype="imagearea" height="444">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.15" top="-20" useABK="1" safeContainerLocation="persistent" filename="P1020747.jpeg">
+    <relationships>
+     <relationship child="P1020747.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020747.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="528" alpha="1" zposition="105" isResizable="1" top="401" width="750" rotation="8" areatype="imagearea" height="574">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-42" scale="0.191333" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020738.jpeg">
+    <relationships>
+     <relationship child="P1020738.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020738.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="400" alpha="1" zposition="106" isResizable="1" top="962" width="1250" rotation="0" areatype="imagearea" height="1628">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-1292" scale="0.542667" top="0" useABK="1" safeContainerLocation="persistent" filename="P1020727.jpeg">
+    <relationships>
+     <relationship child="P1020727.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/baie halong/P1020727.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="122" isResizable="1" top="1455.541218637993" width="1830" rotation="0" areatype="imagearea" height="1134.458781362007">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="0" scale="0.4575" top="-260" useABK="1" safeContainerLocation="persistent" filename="P1020764.jpeg">
+    <relationships>
+     <relationship child="P1020764.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/ninh binh/P1020764.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="2160" alpha="1" zposition="123" isResizable="1" top="110" width="876" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-40" scale="0.297619" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_2003.jpeg">
+    <relationships>
+     <relationship child="IMG_2003.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_2003.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+  <area left="3115" alpha="1" zposition="124" isResizable="1" top="110" width="876" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ffbbbbbb" position="outside" width="5" enabled="0" applySpotColor="0"/>
+   <image left="-40" scale="0.297619" top="0" useABK="1" safeContainerLocation="persistent" filename="IMG_1967.jpeg">
+    <relationships>
+     <relationship child="IMG_1967.jpeg" parent="C:/Users/mares/Pictures/voyage/vietnam/other vitnam/IMG_1967.JPG" nature="RELATIONSHIP_ONE_TO_ONE_COPY"/>
+    </relationships>
+   </image>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="21" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_003_x,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="22" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_002,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="100" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="110" alpha="1" zposition="101" isResizable="1" top="1390" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="2160" alpha="1" zposition="102" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="2160" alpha="1" zposition="103" isResizable="1" top="1390" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="23" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_002,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="24" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_002,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="100" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="110" alpha="1" zposition="101" isResizable="1" top="1390" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="2160" alpha="1" zposition="102" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="2160" alpha="1" zposition="103" isResizable="1" top="1390" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="25" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_002,normal" layout="1"/>
+ </page>
+ <page designStyleID="-1" pagenr="26" type="normalpage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs layout="125061" background="201"/>
+  <background alignment="1" templatename="Weiss,normal," type="1" rotation="0"/>
+  <background templatename="schema_portrait_002,normal" layout="1"/>
+  <area left="110" alpha="1" zposition="100" isResizable="1" top="110" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+  <area left="110" alpha="1" zposition="101" isResizable="1" top="1390" width="1830" rotation="0" areatype="imagearea" height="1200">
+   <border color="#ff000000" position="outside" width="2" enabled="0" applySpotColor="0"/>
+   <image/>
+  </area>
+ </page>
+ <page designStyleID="-1" pagenr="0" type="emptypage" rotation="0">
+  <bundlesize width="4100" height="2700"/>
+  <designElementIDs background="201"/>
+  <background alignment="3" templatename="Weiss,normal," type="1" rotation="0"/>
+ </page>
+ <userfeedback></userfeedback>
+ <statistics elapsedTimeGross="2018-07-12T17:43:19" fotosRemoved="209" fotosAdded="281" assistantUsed="0" elapsedTimeNet="6134" sessionsUsed="2" countPauses="0" pauseTime="0"/>
+</fotobook>

@@ -1,0 +1,60 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Les machines{% endblock %}
+{% block monTitre %}
+    Les Machines
+{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-2">
+        <a href="{{ path('createMachine') }}" class="btn btn-success m-4">Ajoutez</a>
+    </div>
+    <div class="col-10 p-0">
+        {% for message in app.flashes('success') %}
+        <div class="container alert alert-success m-0 text-center">
+            {{message}}
+        </div>
+{% endfor %}
+    </div>
+</div>
+<table class="table table-hover text-center">
+    <tr class="table-primary">
+        <td>Nom</td>
+        <td>Catégories</td>
+        <td>Immatriculation</td>
+        <td>Model moteur</td>
+        <td>Puissance moteur</td>
+        <td>Envergure</td>
+        <td>Places</td>
+        <td>Vitesse</td>
+        <td>Description</td>
+        <td>Actions</td>
+    </tr>
+    {% for m in machine %}
+        <tr>
+            <td><strong>{{m.nom}}</strong></td>
+            <td>{{m.categories.libelle}}</td>
+            <td>{{m.immatriculation}}</td>
+            <td>{{m.moteur}}</td>
+            <td>{{m.pMoteur}}</td>
+            <td>{{m.envergure}}</td>
+            <td>{{m.nbPlace}}</td>
+            <td>{{m.vitesse}}</td>
+            {% if m.description | length >=   30 %}
+                    <td>{{m.description | slice(0, 30)}}... <a href="{{path('modifMachine',{'id': m.id})}}">Voir plus</a> </td>
+                {% else %}
+                    <td>{{m.description}}</td>
+                {% endif %}
+            <td>
+                <a href="{{path('modifMachine',{'id': m.id})}}" class="btn btn-secondary">Modifier</a>
+                <form method="POST" style="display:inline-block" action="{{path('supMachine',{'id':m.id})}}" onsubmit="return confirm('Confirmer la suppression')">
+                <input type="hidden" name="_method" value="delete">
+                <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ m.id)}}">
+                    <input type="submit" class="btn btn-danger" value="supprimer">
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

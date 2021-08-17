@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Avions et ULM{% endblock %}
+
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            {% if category.libelle != 'moteur' %}
+                <h1 class="text-center py-5">Les Planeurs</h1>
+            {% else %}
+            <h1 class="text-center py-5">Les Avions et ULM</h1>
+            {% endif %}
+            {% for m in category.machine %}
+            <div class="row p-3 mt-2">
+                <div class="col-lg-4">
+                    <img src="{{asset('images/machines/' ~ m.images.first.src)}}" alt="" class="img-fluid mt-2 imgActu">
+                </div>
+                <div class="col-lg-8">
+                    <h2>{{m.nom}}</h2>
+                    <p>
+                        {{m.description|slice(0,250)}}...
+                    </p>
+                    <div>
+                        <a href="{{path('machine_show', {'slug': m.slug})}}"><i class="fas fa-book-open btn btn-primary mr-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hrVol my-5">
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

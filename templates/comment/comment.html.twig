@@ -1,0 +1,59 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="wrapper container">
+    <div class="row">
+        <div class="col-lg-9">
+            <h1 class="text-center py-5">Livre d'or</h1>
+            <hr id="hrContact">
+            {% for message in app.flashes('success') %}
+                <div class="container alert alert-success text-center" id="alertComment">
+                    {{message}}
+                </div>
+            {% endfor %}
+            <div id="commentForm" class="pl-5 py-4">
+                <div class="row">
+                    <div class="col-6">
+                        {{form_start(form)}}
+                            <div class="row">
+                                <div class="col">{{form_row(form.firstname)}}</div>
+                                <div class="col">{{form_row(form.lastname)}}</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">{{form_row(form.email)}}</div>
+                            </div>
+                            {{form_widget(form)}}
+                            <small>
+                                *Uniquement votre prénom et message apparaitront dans les commentaires <br>
+                                *Votre commentaire sera d'abord examiné par l'administateur du site avant d'apparaitre.
+                            </small>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block mt-4" id="btnContact">Envoyer</button>
+                            </div>
+                        {{form_end(form)}}
+                    </div>
+                    <div class="col-6 mt-5 text-center">
+                        <h3>Donnez nous votre avis !</h3>
+                        <p>Si vous avez apprécié votre visite dans notre aéroclub de Sologne n'hésitez pas nous donné votre avis ! </p>
+                        <img src="/images/logo.png" alt="" class="imgComment">
+                    </div>
+                </div>
+            </div>
+            <hr class="hrVol pb-3">
+            {% for c in comment %}
+                <div class="container cardComment mt-5">
+                    <div class="card">
+                        <p class="card-header text-uppercase"><strong>{{c.firstname}}</strong></p>
+                        <div class="card-body">
+                            <p>{{c.content}}</p>
+                            <small>posté le: {{c.createdAt|date("m/d/Y")}}</small>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-lg-3">
+            {% include "partials/sidebar.html.twig" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
